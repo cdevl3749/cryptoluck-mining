@@ -1,0 +1,21 @@
+{
+  "name": "CryptoLuck Mining - Bitcoin Lottery",
+  "short_name": "CryptoLuck",
+  "description": "Plateforme de minage collaboratif de Bitcoin",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e27",
+  "theme_color": "#FFD700",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance", "cryptocurrency", "technology"],
+  "lang": "fr",
+  "dir": "ltr"
+}
