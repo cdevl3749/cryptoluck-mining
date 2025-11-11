@@ -1,0 +1,8 @@
+# Robots.txt pour CryptoLuck Mining
+# Dernière mise à jour: 2025-01-10
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://cryptoluck-mining.netlify.app/sitemap.xml
