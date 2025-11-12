@@ -13,6 +13,7 @@ import MentionsLegales from './components/modals/MentionsLegales'
 import Conditions from './components/modals/Conditions'
 import Confidentialite from './components/modals/Confidentialite'
 import Contact from './components/modals/Contact'
+import MinerDashboard from './components/MinerDashboard'
 
 function App() {
   const [activeModal, setActiveModal] = useState(null)
@@ -34,6 +35,7 @@ function App() {
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <JackpotDisplay />
+        <MinerDashboard />
         <ExplanationBox />
         <LotteryBanner />
         <MiningIcons />
