@@ -77,7 +77,7 @@ export default function Conditions({ closeModal }) {
             <h3 className="text-2xl text-cyan-400 font-semibold mb-3">6. Répartition des gains</h3>
             <p className="leading-relaxed">
               En cas de découverte d'un bloc Bitcoin, les gains seront répartis entre tous les abonnés actifs 
-              au prorata de leur durée d'abonnement. Les frais de plateforme (20%) seront déduits avant répartition.
+              au prorata de leur durée d'abonnement. Les frais de plateforme (7%) seront déduits avant répartition.
             </p>
           </div>
 
