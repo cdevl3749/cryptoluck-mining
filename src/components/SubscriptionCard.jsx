@@ -36,7 +36,6 @@ export default function SubscriptionCard() {
     "144 tirages quotidiens (toutes les 10 min)",
     "Notifications en temps réel",
     "Support technique prioritaire",
-    "Sans engagement • Résiliable à tout moment"
   ]
 
   const copyAddress = () => {
