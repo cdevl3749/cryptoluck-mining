@@ -77,6 +77,31 @@ export default function Footer({ openModal }) {
           </div>
         </div>
 
+        {/* Réseaux sociaux - Twitter/X */}
+        <div className="flex justify-center mb-8">
+          <a 
+            href="https://x.com/CryptoLuck_JP" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group flex items-center gap-3 bg-gradient-to-r from-gray-800 to-black hover:from-cyan-400/20 hover:to-blue-400/20 border-2 border-gray-700 hover:border-cyan-400 px-6 py-3 rounded-xl transition-all duration-300 shadow-lg hover:shadow-cyan-400/50"
+          >
+            {/* Logo X (Twitter) */}
+            <svg 
+              viewBox="0 0 24 24" 
+              className="w-6 h-6 fill-white group-hover:fill-cyan-400 transition-colors duration-300"
+              aria-hidden="true"
+            >
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            <span className="text-white font-semibold group-hover:text-cyan-400 transition-colors duration-300">
+              {t("footer.follow_us") || "Suivez-nous sur X"}
+            </span>
+            <span className="text-gray-400 group-hover:text-cyan-300 transition-colors duration-300">
+              @CryptoLuck_JP
+            </span>
+          </a>
+        </div>
+
         {/* Liens */}
         <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-6">
           <button onClick={() => openModal("mentionsLegales")} className="text-cyan-400 hover:text-yellow-400 px-4 py-2 border-b-2 border-transparent hover:border-yellow-400 transition-colors">
