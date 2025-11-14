@@ -63,28 +63,29 @@
     
     <!-- Structured Data / Schema.org - Organization -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "CryptoLuck Mining",
-      "description": "Plateforme de minage collaboratif de Bitcoin",
-      "url": "https://cryptoluck-mining.netlify.app",
-      "logo": "https://cryptoluck-mining.netlify.app/favicon.svg",
-      "foundingDate": "2025",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "contact@cryptoluckmining.com",
-        "contactType": "customer service",
-        "areaServed": ["BE", "FR", "US", "JP"],
-        "availableLanguage": ["French", "English", "Japanese"]
-      },
-      "sameAs": [
-        "https://twitter.com/cryptoluckmining",
-        "https://facebook.com/cryptoluckmining"
-      ]
-    }
-    </script>
-    
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "CryptoLuck Mining - Abonnement Bitcoin Lottery Mining",
+  "description": "Service d'abonnement permettant de participer automatiquement au tirage des blocs Bitcoin pour tenter de gagner la récompense de minage.",
+  "serviceType": "Mining collaboratif & tirage Bitcoin",
+  "provider": {
+    "@type": "Organization",
+    "name": "CryptoLuck Mining",
+    "url": "https://cryptoluck-mining.netlify.app/",
+    "logo": "https://cryptoluck-mining.netlify.app/favicon.svg"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://cryptoluck-mining.netlify.app/",
+    "price": "9.99",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/OnlineOnly"
+  },
+  "areaServed": "Worldwide"
+}
+</script>
+
     <!-- Structured Data / Schema.org - WebSite with Search -->
     <script type="application/ld+json">
     {
@@ -102,31 +103,39 @@
     </script>
     
     <!-- Structured Data / Schema.org - Product/Service -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Abonnement CryptoLuck Mining Premium",
-      "description": "Abonnement mensuel pour participer au minage collaboratif de Bitcoin",
-      "brand": {
-        "@type": "Brand",
-        "name": "CryptoLuck Mining"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "9.99",
-        "priceCurrency": "EUR",
-        "availability": "https://schema.org/InStock",
-        "url": "https://cryptoluck-mining.netlify.app",
-        "priceValidUntil": "2026-12-31"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "150"
-      }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Abonnement CryptoLuck Mining Premium",
+  "description": "Abonnement mensuel pour participer au minage collaboratif de Bitcoin. 144 tirages quotidiens pour tenter de gagner la récompense d'un bloc Bitcoin.",
+  "image": "https://cryptoluck-mining.netlify.app/og-image.jpg",
+  "brand": {
+    "@type": "Brand",
+    "name": "CryptoLuck Mining"
+  },
+  "category": "Service d'abonnement",
+  "offers": {
+    "@type": "Offer",
+    "price": "9.99",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://cryptoluck-mining.netlify.app",
+    "priceValidUntil": "2026-12-31",
+    "seller": {
+      "@type": "Organization",
+      "name": "CryptoLuck Mining"
     }
-    </script>
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "150",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
     
     <!-- Structured Data / Schema.org - BreadcrumbList -->
     <script type="application/ld+json">
