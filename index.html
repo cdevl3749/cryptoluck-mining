@@ -13,7 +13,7 @@
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- SEO Meta Tags -->
+    <!-- SEO Meta Tags - Sera mis à jour dynamiquement par React -->
     <title>CryptoLuck Mining - Bitcoin Lottery Mining | Minage Collaboratif BTC</title>
     <meta name="description" content="Participez au minage collaboratif de Bitcoin avec CryptoLuck Mining. Abonnement 9,99€/mois pour 144 tirages quotidiens. Système ESP32 + Raspberry Pi. Gagnez jusqu'à 200 000€ par bloc miné !" />
     <meta name="keywords" content="bitcoin mining, minage bitcoin, crypto mining, lottery bitcoin, blockchain, ESP32, Raspberry Pi, cryptomonnaie, mining pool, bitcoin lottery, minage collaboratif, investissement crypto, gagner bitcoin" />
@@ -22,9 +22,15 @@
     <meta name="googlebot" content="index, follow" />
     <link rel="canonical" href="https://cryptoluck-mining.netlify.app/" />
     
-    <!-- Language -->
+    <!-- Language - Sera mis à jour dynamiquement -->
     <meta http-equiv="content-language" content="fr" />
     <meta name="language" content="French" />
+    
+    <!-- Hreflang Links - International SEO (ajoutés dynamiquement par React) -->
+    <link rel="alternate" hreflang="fr" href="https://cryptoluck-mining.netlify.app/?lang=fr" />
+    <link rel="alternate" hreflang="en" href="https://cryptoluck-mining.netlify.app/?lang=en" />
+    <link rel="alternate" hreflang="ja" href="https://cryptoluck-mining.netlify.app/?lang=ja" />
+    <link rel="alternate" hreflang="x-default" href="https://cryptoluck-mining.netlify.app/" />
     
     <!-- Open Graph / Facebook / LinkedIn -->
     <meta property="og:type" content="website" />
@@ -36,13 +42,15 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="ja_JP" />
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://cryptoluck-mining.netlify.app/" />
     <meta name="twitter:title" content="CryptoLuck Mining - Bitcoin Lottery Mining" />
     <meta name="twitter:description" content="Participez au minage collaboratif de Bitcoin. 144 tirages par jour, abonnement 9,99€/mois. Système innovant ESP32 + Raspberry Pi." />
-    <meta name="twitter:image" content="https://cryptoluck-mining.netlify.app/og-image.jpg" />
+    <meta property="og:image" content="https://cryptoluck-mining.netlify.app/og-image.jpg" />
     <meta name="twitter:creator" content="@cryptoluckmining" />
     
     <!-- Geographic Meta Tags -->
@@ -67,8 +75,8 @@
         "@type": "ContactPoint",
         "email": "contact@cryptoluckmining.com",
         "contactType": "customer service",
-        "areaServed": "BE",
-        "availableLanguage": ["French"]
+        "areaServed": ["BE", "FR", "US", "JP"],
+        "availableLanguage": ["French", "English", "Japanese"]
       },
       "sameAs": [
         "https://twitter.com/cryptoluckmining",
@@ -77,7 +85,7 @@
     }
     </script>
     
-    <!-- Structured Data / Schema.org - WebSite -->
+    <!-- Structured Data / Schema.org - WebSite with Search -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -89,7 +97,7 @@
         "@type": "Organization",
         "name": "CryptoLuck Mining"
       },
-      "inLanguage": "fr-FR"
+      "inLanguage": ["fr-FR", "en-US", "ja-JP"]
     }
     </script>
     
@@ -136,15 +144,16 @@
     
     <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://cdn.tailwindcss.com" />
-    <link rel="preconnect" href="https://api.coingecko.com" />
+    <link rel="preconnect" href="https://blockchain.info" />
     
     <!-- DNS Prefetch -->
     <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
-    <link rel="dns-prefetch" href="https://api.coingecko.com" />
+    <link rel="dns-prefetch" href="https://blockchain.info" />
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Google Site Verification -->
     <meta name="google-site-verification" content="4CSwzXL0UWglX4NZcuCJfglHdC4Y-YI5_q17BiF0Ebc" />
 
   </head>

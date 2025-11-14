@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import './i18n'
 import { useTranslation } from 'react-i18next'
+import { SEOHead, HreflangLinks } from './components/SEO'
 import Header from './components/Header'
 import JackpotDisplay from './components/JackpotDisplay'
 import ExplanationBox from './components/ExplanationBox'
@@ -150,6 +151,10 @@ function App() {
 
   return (
     <div className="min-h-screen relative">
+      {/* SEO Components pour multilingue */}
+      <SEOHead />
+      <HreflangLinks />
+      
       <CookieBanner />
       <Header />
       
