@@ -129,20 +129,8 @@ function LanguageSelector() {
 
 function App() {
   const [activeModal, setActiveModal] = useState(null)
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   const subscriptionRef = useRef(null)
-
-  // 🆕 AJOUTEZ CE CODE ICI
-useEffect(() => {
-  const urlParams = new URLSearchParams(window.location.search)
-  const langParam = urlParams.get('lang')
-  
-  const supportedLanguages = ['fr', 'en', 'ja']
-  
-  if (langParam && supportedLanguages.includes(langParam)) {
-    i18n.changeLanguage(langParam)
-  }
-}, [i18n])
 
   const openModal = (modalName) => {
     setActiveModal(modalName)
