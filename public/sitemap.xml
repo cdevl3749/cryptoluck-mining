@@ -1,50 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Page principale (français par défaut) -->
   <url>
     <loc>https://cryptoluck-mining.netlify.app/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://cryptoluck-mining.netlify.app/?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cryptoluck-mining.netlify.app/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://cryptoluck-mining.netlify.app/?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cryptoluck-mining.netlify.app/"/>
     <lastmod>2025-01-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Version française -->
   <url>
     <loc>https://cryptoluck-mining.netlify.app/?lang=fr</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://cryptoluck-mining.netlify.app/?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cryptoluck-mining.netlify.app/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://cryptoluck-mining.netlify.app/?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cryptoluck-mining.netlify.app/"/>
     <lastmod>2025-01-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Version anglaise -->
   <url>
     <loc>https://cryptoluck-mining.netlify.app/?lang=en</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://cryptoluck-mining.netlify.app/?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cryptoluck-mining.netlify.app/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://cryptoluck-mining.netlify.app/?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cryptoluck-mining.netlify.app/"/>
     <lastmod>2025-01-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Version japonaise -->
   <url>
     <loc>https://cryptoluck-mining.netlify.app/?lang=ja</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://cryptoluck-mining.netlify.app/?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cryptoluck-mining.netlify.app/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://cryptoluck-mining.netlify.app/?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cryptoluck-mining.netlify.app/"/>
     <lastmod>2025-01-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
