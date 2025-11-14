@@ -1,0 +1,345 @@
+{
+  "home": {
+    "welcome": "Welcome to CryptoLuck",
+    "subscribe": "Subscribe now"
+  },
+  "header": {
+    "title": "CRYPTOLUCK MINING",
+    "subtitle": "Your crypto destiny begins here"
+  },
+  "footer": {
+    "payment_title": "100% Crypto Payment",
+    "payment_exclusive": "Exclusive Bitcoin Payment",
+    "payment_details": "Secured by blockchain • Verifiable transactions • Privacy guaranteed",
+    "badges": {
+      "ledger": "Ledger Hardware Wallet",
+      "instant": "Instant Payment",
+      "worldwide": "Accepted Worldwide",
+      "secure": "Secure Blockchain"
+    },
+    "extra_info": "✅ Your Ledger address • ✅ Blockchain confirmations • ✅ 24/7 Support",
+    "legal": "Legal Notice",
+    "terms": "Terms and Conditions",
+    "privacy": "Privacy Policy",
+    "contact": "Contact",
+    "copyright": "© 2025 CryptoLuck Mining. All rights reserved.",
+    "warning": "⚠️ Bitcoin mining involves risks. Past performance does not guarantee future results."
+  },
+
+  "explanation": {
+    "title": "What is Bitcoin Lottery Mining?",
+    "paragraph1": "Bitcoin Lottery Mining is an innovative approach to Bitcoin mining that turns computing power into opportunity. Unlike traditional mining, which requires massive hardware investments, our system uses the Bitmain Antminer S19 XP to attempt to discover the next Bitcoin block.",
+    "paragraph2": "Each participant becomes part of this decentralized lottery where luck can strike at any time. With every draw, your subscription gives you a real chance to become part of Bitcoin’s blockchain history!"
+  },
+
+  "lottery": {
+    "title": "DRAW EVERY 10 MINUTES",
+    "subtitle": "A new chance to win with every Bitcoin block mined worldwide!",
+    "loading": "Loading price...",
+    "block_value": "BLOCK VALUE:",
+    "reward_note": "reward + transaction fees"
+  },
+
+  "timeline": {
+    "title": "How to Participate?",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Subscribe to the plan",
+        "description": "Choose your monthly subscription and join the CryptoLuck Mining community in just a few clicks."
+      },
+      {
+        "number": 2,
+        "title": "Instant Activation",
+        "description": "Your account is activated immediately, and you automatically join all upcoming draws."
+      },
+      {
+        "number": 3,
+        "title": "Automatic Participation",
+        "description": "Our Bitmain Antminer S19 XP infrastructure works 24/7 to attempt to mine the next Bitcoin block."
+      },
+      {
+        "number": 4,
+        "title": "Success Notification",
+        "description": "If our pool successfully mines a block, all active participants are notified and rewarded proportionally."
+      },
+      {
+        "number": 5,
+        "title": "Withdraw Your Earnings",
+        "description": "Rewards are automatically sent to your personal Bitcoin wallet within 48 hours."
+      }
+    ]
+  },
+
+  "cookie": {
+  "message": "We use cookies to improve your experience on our site. By continuing to browse, you accept our use of cookies.",
+  "accept": "Accept",
+  "decline": "Decline"
+},
+
+"blockStatus": {
+  "title": "🏆 Last Mined Block Status",
+  "systemActive": "System active - Waiting for next block",
+  "lastBlock": "Last block found:",
+  "noBlock": "No block mined yet",
+  "activeParticipants": "Active participants:",
+  "nextDraw": "Next draw in:"
+},
+
+"jackpot": {
+  "title": "🏆 NEXT BLOCK VALUE 🏆",
+  "loading": "Loading Bitcoin price...",
+  "reward": "block reward + transaction fees",
+  "approximately": "Approximately",
+  "perBitcoin": "per Bitcoin at current rate",
+  "updateEvery": "Updated every 10s",
+  "updatePending": "Update pending..."
+},
+
+"minerDashboard": {
+  "mainButton": {
+    "title": "🔴 Miner in Action",
+    "subtitle": "Bitmain Antminer S19 XP - 140 TH/s real-time",
+    "status": "ONLINE",
+    "liveData": "Live Data 🚀"
+  },
+  "floatingButton": {
+    "title": "View miner in action",
+    "text": "Miner in Action"
+  },
+  "header": {
+    "model": "Bitmain Antminer S19 XP",
+    "subtitle": "Live Mining 🔴 LIVE",
+    "status": "ONLINE"
+  },
+  "stats": {
+    "hashrate": "HASHRATE",
+    "hashrateUnit": "TH/s",
+    "optimal": "Optimal",
+    "power": "POWER",
+    "powerUnit": "W",
+    "temp": "TEMP",
+    "tempStatus": "✓ Normal",
+    "uptime": "UPTIME",
+    "activity": "Activity"
+  },
+  "advanced": {
+    "hashesTitle": "Calculated Hashes",
+    "totalSince": "Total since startup",
+    "chancePerBlock": "Chance per block",
+    "oneIn": "1 in",
+    "perBlock": "per block",
+    "coolingTitle": "Cooling",
+    "fan": "Fan"
+  },
+  "network": {
+    "title": "🌐 Bitcoin Network",
+    "hashrate": "Network Hashrate",
+    "blockTime": "Block Time",
+    "reward": "Reward"
+  },
+  "warning": "ℹ️ No block found yet. Bitcoin mining is a lottery where each hash has an equal chance. Only Premium subscribers will be rewarded if a block is discovered!",
+  "warningBold1": "No block found yet.",
+  "warningBold2": "Premium subscribers",
+  "closeButton": "✕ CLOSE DASHBOARD"
+},
+
+"conditions": {
+  "title": "Terms and Conditions",
+  "sections": [
+    {
+      "title": "1. Purpose",
+      "text": "These terms govern the use of the CryptoLuck Mining service, a collaborative Bitcoin mining participation platform."
+    },
+    {
+      "title": "2. Registration and Subscription",
+      "text": "The subscription is offered at €9.99 per month, VAT included. Payment is processed through Stripe. The subscription renews automatically each month until cancelled."
+    },
+    {
+      "title": "3. Right of Withdrawal",
+      "text": "In accordance with European law, you have 14 days to withdraw after subscribing. To exercise this right, contact us at contact@cryptoluckmining.com."
+    },
+    {
+      "title": "4. Cancellation",
+      "text": "You may cancel your subscription at any time from your account or by contacting us. The cancellation will take effect at the end of the current billing period."
+    },
+    {
+      "title": "5. Service Operation",
+      "text": "CryptoLuck Mining provides a Bitcoin mining infrastructure. Participation entitles users to a proportional share of any block rewards if a block is mined. No earnings are guaranteed. Bitcoin mining is subject to blockchain randomness and network difficulty."
+    },
+    {
+      "title": "6. Reward Distribution",
+      "text": "If a Bitcoin block is mined, rewards are distributed among all active subscribers based on subscription duration. Platform fees (7%) are deducted before distribution."
+    },
+    {
+      "title": "7. Risks",
+      "text": "Users acknowledge that Bitcoin mining involves financial risks. The probability of mining a block is extremely low, and earnings are never guaranteed. CryptoLuck Mining cannot be held responsible for the absence of rewards."
+    },
+    {
+      "title": "8. Modification of Terms",
+      "text": "CryptoLuck Mining reserves the right to modify these terms at any time. Users will be informed by email of any significant changes."
+    }
+  ]
+},
+
+"privacy": {
+  "title": "Privacy Policy",
+  "sections": [
+    {
+      "title": "1. Data Collection",
+      "text": "We collect the following personal data:",
+      "list": [
+        "CRYPTOLUCK MINING",
+        "cryptoluck@gmail.com",
+        "Payment information (processed by Stripe)"
+      ]
+    },
+    {
+      "title": "2. Use of Data",
+      "text": "Your data is used to:",
+      "list": [
+        "Manage your subscription and account",
+        "Process payments",
+        "Notify you about mining activity",
+        "Distribute potential rewards",
+        "Improve our services",
+        "Comply with legal obligations"
+      ]
+    },
+    {
+      "title": "3. Data Sharing",
+      "text": "Your data is never sold. It may be shared only with:",
+      "list": [
+        "Stripe (payment processing)",
+        "Netlify (website hosting)",
+        "Competent authorities when legally required"
+      ]
+    },
+    {
+      "title": "4. Security",
+      "text": "We implement technical and organizational security measures to protect your data against unauthorized access, loss, or disclosure."
+    },
+    {
+      "title": "5. Your Rights (GDPR)",
+      "text": "In accordance with GDPR, you have the following rights:",
+      "list": [
+        "Right of access",
+        "Right to rectification",
+        "Right to erasure",
+        "Right to restrict processing",
+        "Right to data portability",
+        "Right to object"
+      ],
+      "note": "To exercise these rights: privacy@cryptoluckmining.com"
+    },
+    {
+      "title": "6. Data Retention",
+      "text": "Your data is kept for the duration of your subscription and up to 3 years after cancellation, in accordance with legal and accounting obligations."
+    },
+    {
+      "title": "7. Cookies",
+      "text": "We use essential cookies for website operation and analytics cookies (with your consent) to improve our services."
+    },
+    {
+      "title": "8. DPO Contact",
+      "text": "For any question regarding data protection:",
+      "note": "Email: dpo@cryptoluckmining.com"
+    }
+  ]
+},
+
+"contact": {
+  "title": "Contact",
+  "email": "Email",
+  "schedule": "Schedule",
+
+  "customer_service": {
+    "title": "Customer Service",
+    "schedule": "Monday - Friday, 9 AM - 6 PM"
+  },
+
+  "tech_support": {
+    "title": "Technical Support",
+    "delay": "Response within 24 business hours"
+  },
+
+  "sales": {
+    "title": "Sales Inquiries"
+  },
+
+  "dpo": {
+    "title": "Data Protection Officer",
+    "email_label": "DPO Email"
+  },
+
+  "address": {
+    "title": "Postal Address",
+    "country": "Belgium"
+  },
+
+  "note": "💬 Our team is here to answer any questions about Bitcoin Lottery Mining, your subscription, or any other topic."
+},
+
+"legal": {
+  "title": "Legal Notice",
+
+  "address_label": "Head Office",
+  "email_label": "Email",
+
+  "editor": {
+    "title": "Website Publisher"
+  },
+
+  "director": {
+    "title": "Publication Director"
+  },
+
+  "hosting": {
+    "title": "Hosting",
+    "host": "Host",
+    "address": "Address",
+    "website": "Website"
+  },
+
+  "intellectual": {
+    "title": "Intellectual Property",
+    "text": "All content on this website (texts, images, logos, graphics, etc.) is protected by copyright and belongs to CryptoLuck Mining or its partners. Any reproduction, even partial, is strictly prohibited without prior written authorization."
+  },
+
+  "liability": {
+    "title": "Liability Limitation",
+    "text": "CryptoLuck Mining cannot be held responsible for direct or indirect damages resulting from the use of this website. Cryptocurrency mining involves financial risks and profits are never guaranteed."
+  },
+
+  "cookies": {
+    "title": "Cookies",
+    "text": "This site uses cookies to enhance your browsing experience. You can manage your preferences via the banner displayed on your first visit."
+  }
+},
+
+  "subscription": {
+    "title": "Premium Subscription",
+    "activation": "Instant activation after confirmation",
+    "price": "/month VAT included",
+    "features": [
+      "Unlimited participation in all draws",
+      "144 chances per day (1 draw every 10 min)",
+      "Real-time dashboard",
+      "Instant notifications",
+      "Priority technical support",
+      "Detailed participation statistics"
+    ],
+    "payment": "Bitcoin Payment",
+    "amount_label": "Amount to send:",
+    "loading": "Loading...",
+    "updated": "Price updated in real time",
+    "scan": "Scan with your Bitcoin wallet",
+    "address_label": "Payment address:",
+    "copy": "Copy Bitcoin address",
+    "secure": "Secure payment via Bitcoin blockchain",
+    "confirmation": "Automatic activation after 3 confirmations (~30 minutes)",
+    "button": "SUBSCRIBE NOW"
+  }
+}
+
+

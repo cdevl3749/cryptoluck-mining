@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { X, Cpu, Zap, Thermometer, Clock, Hash, TrendingUp, Activity } from 'lucide-react';
 
 export default function MinerDashboard() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t, i18n } = useTranslation();
   const [minerData, setMinerData] = useState({
     hashrate: 140.2,
     power: 3010,
@@ -61,6 +63,13 @@ export default function MinerDashboard() {
     const hours = Math.floor((seconds % 86400) / 3600);
     const mins = Math.floor((seconds % 3600) / 60);
     const secs = seconds % 60;
+    
+    // Format selon la langue
+    if (i18n.language === 'ja') {
+      return `${days}日 ${hours}時間 ${mins}分 ${secs}秒`;
+    } else if (i18n.language === 'en') {
+      return `${days}d ${hours}h ${mins}m ${secs}s`;
+    }
     return `${days}j ${hours}h ${mins}m ${secs}s`;
   };
 
@@ -68,6 +77,14 @@ export default function MinerDashboard() {
     if (hashes >= 1e15) return `${(hashes / 1e15).toFixed(2)} PH`;
     if (hashes >= 1e12) return `${(hashes / 1e12).toFixed(2)} TH`;
     return `${(hashes / 1e9).toFixed(2)} GH`;
+  };
+
+  const getLocale = () => {
+    switch(i18n.language) {
+      case 'en': return 'en-US';
+      case 'ja': return 'ja-JP';
+      default: return 'fr-FR';
+    }
   };
 
   const networkHashrate = 750000000;
@@ -91,20 +108,20 @@ export default function MinerDashboard() {
               </div>
               <div className="text-left">
                 <div className="text-2xl sm:text-3xl font-bold mb-1">
-                  🔴 Miner en Action
+                  {t('minerDashboard.mainButton.title')}
                 </div>
                 <div className="text-cyan-100 text-sm sm:text-base">
-                  Bitmain Antminer S19 XP - 140 TH/s en temps réel
+                  {t('minerDashboard.mainButton.subtitle')}
                 </div>
               </div>
               <div className="ml-auto">
                 <div className="flex flex-col items-end gap-2">
                   <span className="px-4 py-1 bg-green-500/30 border border-green-400 rounded-full text-green-300 text-sm font-semibold flex items-center gap-2">
                     <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                    ONLINE
+                    {t('minerDashboard.mainButton.status')}
                   </span>
                   <span className="text-yellow-300 text-xs font-semibold">
-                    Données en direct 🚀
+                    {t('minerDashboard.mainButton.liveData')}
                   </span>
                 </div>
               </div>
@@ -117,10 +134,10 @@ export default function MinerDashboard() {
       <button
         onClick={() => setIsOpen(true)}
         className="fixed bottom-8 right-8 bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-5 py-4 rounded-full shadow-[0_0_30px_rgba(6,182,212,0.6)] hover:shadow-[0_0_50px_rgba(6,182,212,0.8)] hover:scale-110 transition-all duration-300 flex items-center gap-2 font-bold z-50 group"
-        title="Voir le miner en action"
+        title={t('minerDashboard.floatingButton.title')}
       >
         <Activity className="w-6 h-6 group-hover:rotate-180 transition-transform duration-500" />
-        <span className="hidden sm:inline">Miner en Action</span>
+        <span className="hidden sm:inline">{t('minerDashboard.floatingButton.text')}</span>
         <span className="w-3 h-3 bg-green-400 rounded-full animate-ping absolute -top-1 -right-1" />
       </button>
 
@@ -141,7 +158,7 @@ export default function MinerDashboard() {
               <button
                 onClick={() => setIsOpen(false)}
                 className="absolute top-2 right-2 sm:top-4 sm:right-4 z-[10000] text-white bg-red-500 hover:bg-red-600 rounded-full p-3 shadow-lg hover:scale-110 transition-all duration-200"
-                title="Fermer"
+                title={t('minerDashboard.floatingButton.title')}
               >
                 <X className="w-6 h-6 sm:w-7 sm:h-7" />
               </button>
@@ -152,14 +169,14 @@ export default function MinerDashboard() {
                 </div>
                 <div className="flex-1">
                   <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">
-                    Bitmain Antminer S19 XP
+                    {t('minerDashboard.header.model')}
                   </h2>
-                  <p className="text-cyan-400 text-sm sm:text-base md:text-lg">Mining en Direct 🔴 LIVE</p>
+                  <p className="text-cyan-400 text-sm sm:text-base md:text-lg">{t('minerDashboard.header.subtitle')}</p>
                 </div>
                 <div className="w-full sm:w-auto">
                   <div className="flex items-center gap-2 bg-green-500/20 px-3 sm:px-4 py-2 rounded-full border border-green-500/50">
                     <div className="w-2 h-2 sm:w-3 sm:h-3 bg-green-500 rounded-full animate-pulse" />
-                    <span className="text-green-400 font-semibold text-sm sm:text-base">ONLINE</span>
+                    <span className="text-green-400 font-semibold text-sm sm:text-base">{t('minerDashboard.header.status')}</span>
                   </div>
                 </div>
               </div>
@@ -175,14 +192,14 @@ export default function MinerDashboard() {
                 <div className="bg-gradient-to-br from-cyan-900/40 to-blue-900/40 border-2 border-cyan-500/30 rounded-xl sm:rounded-2xl p-3 sm:p-5">
                   <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
                     <Hash className="w-4 h-4 sm:w-6 sm:h-6 text-cyan-400" />
-                    <span className="text-gray-400 text-xs sm:text-sm font-semibold">HASHRATE</span>
+                    <span className="text-gray-400 text-xs sm:text-sm font-semibold">{t('minerDashboard.stats.hashrate')}</span>
                   </div>
                   <div className="text-xl sm:text-3xl font-bold text-white mb-1">
-                    {minerData.hashrate.toFixed(2)} <span className="text-sm sm:text-base">TH/s</span>
+                    {minerData.hashrate.toFixed(2)} <span className="text-sm sm:text-base">{t('minerDashboard.stats.hashrateUnit')}</span>
                   </div>
                   <div className="text-green-400 text-xs sm:text-sm flex items-center gap-1">
                     <TrendingUp className="w-3 h-3 sm:w-4 sm:h-4" />
-                    Optimal
+                    {t('minerDashboard.stats.optimal')}
                   </div>
                 </div>
 
@@ -190,10 +207,10 @@ export default function MinerDashboard() {
                 <div className="bg-gradient-to-br from-yellow-900/40 to-orange-900/40 border-2 border-yellow-500/30 rounded-xl sm:rounded-2xl p-3 sm:p-5">
                   <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
                     <Zap className="w-4 h-4 sm:w-6 sm:h-6 text-yellow-400" />
-                    <span className="text-gray-400 text-xs sm:text-sm font-semibold">POWER</span>
+                    <span className="text-gray-400 text-xs sm:text-sm font-semibold">{t('minerDashboard.stats.power')}</span>
                   </div>
                   <div className="text-xl sm:text-3xl font-bold text-white mb-1">
-                    {minerData.power} <span className="text-sm sm:text-base">W</span>
+                    {minerData.power} <span className="text-sm sm:text-base">{t('minerDashboard.stats.powerUnit')}</span>
                   </div>
                   <div className="text-yellow-400 text-xs sm:text-sm">
                     {minerData.efficiency} J/TH
@@ -204,13 +221,13 @@ export default function MinerDashboard() {
                 <div className="bg-gradient-to-br from-red-900/40 to-orange-900/40 border-2 border-red-500/30 rounded-xl sm:rounded-2xl p-3 sm:p-5">
                   <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
                     <Thermometer className="w-4 h-4 sm:w-6 sm:h-6 text-red-400" />
-                    <span className="text-gray-400 text-xs sm:text-sm font-semibold">TEMP</span>
+                    <span className="text-gray-400 text-xs sm:text-sm font-semibold">{t('minerDashboard.stats.temp')}</span>
                   </div>
                   <div className="text-xl sm:text-3xl font-bold text-white mb-1">
                     {minerData.temperature.toFixed(1)}°C
                   </div>
                   <div className="text-green-400 text-xs sm:text-sm">
-                    ✓ Normal
+                    {t('minerDashboard.stats.tempStatus')}
                   </div>
                 </div>
 
@@ -218,13 +235,13 @@ export default function MinerDashboard() {
                 <div className="bg-gradient-to-br from-purple-900/40 to-pink-900/40 border-2 border-purple-500/30 rounded-xl sm:rounded-2xl p-3 sm:p-5">
                   <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
                     <Clock className="w-4 h-4 sm:w-6 sm:h-6 text-purple-400" />
-                    <span className="text-gray-400 text-xs sm:text-sm font-semibold">UPTIME</span>
+                    <span className="text-gray-400 text-xs sm:text-sm font-semibold">{t('minerDashboard.stats.uptime')}</span>
                   </div>
                   <div className="text-sm sm:text-xl font-bold text-white mb-1">
                     {formatUptime(minerData.uptime)}
                   </div>
                   <div className="text-purple-400 text-xs sm:text-sm">
-                    Activité
+                    {t('minerDashboard.stats.activity')}
                   </div>
                 </div>
               </div>
@@ -236,23 +253,23 @@ export default function MinerDashboard() {
                 <div className="bg-[#1a1d3f]/60 border border-cyan-500/30 rounded-xl sm:rounded-2xl p-4 sm:p-6">
                   <h3 className="text-lg sm:text-xl font-bold text-cyan-400 mb-3 sm:mb-4 flex items-center gap-2">
                     <Hash className="w-4 h-4 sm:w-5 sm:h-5" />
-                    Hashes Calculés
+                    {t('minerDashboard.advanced.hashesTitle')}
                   </h3>
                   <div className="space-y-3 sm:space-y-4">
                     <div>
-                      <div className="text-xs sm:text-sm text-gray-400 mb-2">Total depuis démarrage</div>
+                      <div className="text-xs sm:text-sm text-gray-400 mb-2">{t('minerDashboard.advanced.totalSince')}</div>
                       <div className="text-2xl sm:text-3xl font-bold text-white">
                         {formatHashrate(minerData.totalHashes)}
                       </div>
                     </div>
                     <div className="h-px bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent" />
                     <div>
-                      <div className="text-xs sm:text-sm text-gray-400 mb-2">Chances par bloc</div>
+                      <div className="text-xs sm:text-sm text-gray-400 mb-2">{t('minerDashboard.advanced.chancePerBlock')}</div>
                       <div className="text-xl sm:text-2xl font-bold text-yellow-400">
-                        1 sur {Math.floor(networkHashrate / minerData.hashrate).toLocaleString('fr-FR')}
+                        {t('minerDashboard.advanced.oneIn')} {Math.floor(networkHashrate / minerData.hashrate).toLocaleString(getLocale())}
                       </div>
                       <div className="text-xs sm:text-sm text-gray-500 mt-1">
-                        (~{chancePerBlock.toExponential(2)}% par bloc)
+                        (~{chancePerBlock.toExponential(2)}% {t('minerDashboard.advanced.perBlock')})
                       </div>
                     </div>
                   </div>
@@ -262,12 +279,12 @@ export default function MinerDashboard() {
                 <div className="bg-[#1a1d3f]/60 border border-cyan-500/30 rounded-xl sm:rounded-2xl p-4 sm:p-6">
                   <h3 className="text-lg sm:text-xl font-bold text-cyan-400 mb-3 sm:mb-4 flex items-center gap-2">
                     <Activity className="w-4 h-4 sm:w-5 sm:h-5" />
-                    Refroidissement
+                    {t('minerDashboard.advanced.coolingTitle')}
                   </h3>
                   <div className="space-y-2 sm:space-y-3">
                     {minerData.fans.map((speed, index) => (
                       <div key={index} className="flex items-center justify-between gap-2">
-                        <span className="text-gray-400 text-xs sm:text-sm">Fan {index + 1}</span>
+                        <span className="text-gray-400 text-xs sm:text-sm">{t('minerDashboard.advanced.fan')} {index + 1}</span>
                         <div className="flex items-center gap-2 sm:gap-3 flex-1">
                           <div className="flex-1 max-w-[120px] sm:max-w-[150px] bg-gray-700 rounded-full h-2">
                             <div 
@@ -288,19 +305,19 @@ export default function MinerDashboard() {
               {/* Informations réseau */}
               <div className="bg-gradient-to-r from-yellow-900/20 to-orange-900/20 border-2 border-yellow-500/30 rounded-xl sm:rounded-2xl p-4 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-bold text-yellow-400 mb-3 sm:mb-4">
-                  🌐 Réseau Bitcoin
+                  {t('minerDashboard.network.title')}
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
                   <div>
-                    <div className="text-xs sm:text-sm text-gray-400 mb-2">Hashrate Réseau</div>
+                    <div className="text-xs sm:text-sm text-gray-400 mb-2">{t('minerDashboard.network.hashrate')}</div>
                     <div className="text-xl sm:text-2xl font-bold text-white">~750 EH/s</div>
                   </div>
                   <div>
-                    <div className="text-xs sm:text-sm text-gray-400 mb-2">Temps par bloc</div>
+                    <div className="text-xs sm:text-sm text-gray-400 mb-2">{t('minerDashboard.network.blockTime')}</div>
                     <div className="text-xl sm:text-2xl font-bold text-white">~10 min</div>
                   </div>
                   <div>
-                    <div className="text-xs sm:text-sm text-gray-400 mb-2">Récompense</div>
+                    <div className="text-xs sm:text-sm text-gray-400 mb-2">{t('minerDashboard.network.reward')}</div>
                     <div className="text-xl sm:text-2xl font-bold text-white">3.125 BTC</div>
                   </div>
                 </div>
@@ -309,8 +326,7 @@ export default function MinerDashboard() {
               {/* Avertissement */}
               <div className="bg-cyan-500/10 border border-cyan-500/30 rounded-xl p-3 sm:p-4">
                 <p className="text-gray-300 text-center text-xs sm:text-sm leading-relaxed">
-                  ℹ️ <span className="font-semibold text-cyan-400">Aucun bloc trouvé pour le moment.</span> Le minage de Bitcoin est une loterie où chaque hash a une chance égale. 
-                  Seuls les <span className="text-yellow-400 font-semibold">abonnés Premium</span> seront rémunérés en cas de découverte d'un bloc !
+                  {t('minerDashboard.warning')}
                 </p>
               </div>
 
@@ -319,7 +335,7 @@ export default function MinerDashboard() {
                 onClick={() => setIsOpen(false)}
                 className="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 sm:py-4 rounded-xl transition-colors duration-200 lg:hidden"
               >
-                ✕ FERMER LE DASHBOARD
+                {t('minerDashboard.closeButton')}
               </button>
             </div>
           </div>

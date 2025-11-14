@@ -1,0 +1,345 @@
+{
+  "home": {
+    "welcome": "Bienvenue sur CryptoLuck",
+    "subscribe": "S’abonner maintenant"
+  },
+  "header": {
+    "title": "CRYPTOLUCK MINING",
+    "subtitle": "Votre destin crypto commence ici"
+  },
+  "footer": {
+    "payment_title": "Paiement 100% Crypto",
+    "payment_exclusive": "Paiement exclusif en Bitcoin",
+    "payment_details": "Sécurisé par la blockchain • Transactions vérifiables • Anonymat préservé",
+    "badges": {
+      "ledger": "Ledger Hardware Wallet",
+      "instant": "Paiement instantané",
+      "worldwide": "Accepté mondialement",
+      "secure": "Blockchain sécurisée"
+    },
+    "extra_info": "✅ Votre adresse Ledger • ✅ Confirmations blockchain • ✅ Support 24/7",
+    "legal": "Mentions légales",
+    "terms": "Conditions générales",
+    "privacy": "Politique de confidentialité",
+    "contact": "Contact",
+    "copyright": "© 2025 CryptoLuck Mining. Tous droits réservés.",
+    "warning": "⚠️ Le minage de Bitcoin comporte des risques. Les performances passées ne garantissent pas les résultats futurs."
+  },
+  
+"explanation": {
+  "title": "Qu'est-ce que le Bitcoin Lottery Mining ?",
+  "paragraph1": "Le Bitcoin Lottery Mining est une approche innovante du minage de Bitcoin qui transforme la puissance de calcul en opportunité. Contrairement au minage traditionnel qui nécessite d'énormes investissements en matériel, notre système utilise la puissance du Bitmain Antminer S19 XP pour tenter de découvrir le prochain bloc Bitcoin.",
+  "paragraph2": "Chaque participant devient acteur de cette loterie décentralisée où la chance peut frapper à tout moment. À chaque tirage, votre abonnement vous donne une chance réelle de faire partie de l'histoire de la blockchain Bitcoin !"
+},
+
+"lottery": {
+  "title": "TIRAGE TOUTES LES 10 MINUTES",
+  "subtitle": "Une nouvelle chance de gagner à chaque bloc Bitcoin généré dans le monde !",
+  "loading": "Chargement du prix...",
+  "block_value": "VALEUR D'UN BLOC :",
+  "reward_note": "de récompense + frais de transaction"
+},
+
+"timeline": {
+  "title": "Comment participer ?",
+  "steps": [
+    {
+      "number": 1,
+      "title": "Souscrivez à l'abonnement",
+      "description": "Choisissez votre formule d'abonnement mensuel et rejoignez la communauté CryptoLuck Mining en quelques clics."
+    },
+    {
+      "number": 2,
+      "title": "Activation immédiate",
+      "description": "Votre compte est activé instantanément et vous participez automatiquement à tous les tirages suivants."
+    },
+    {
+      "number": 3,
+      "title": "Participation automatique",
+      "description": "Notre infrastructure Bitmain Antminer S19 XP travaille 24/7 pour tenter de miner le prochain bloc Bitcoin."
+    },
+    {
+      "number": 4,
+      "title": "Notification en cas de succès",
+      "description": "Si notre pool mine un bloc avec succès, tous les participants actifs sont notifiés et récompensés proportionnellement."
+    },
+    {
+      "number": 5,
+      "title": "Récupération de vos gains",
+      "description": "Les gains sont distribués automatiquement dans votre portefeuille Bitcoin personnel sous 48h."
+    }
+  ]
+},
+
+"cookie": {
+  "message": "Nous utilisons des cookies pour améliorer votre expérience sur notre site. En continuant à naviguer, vous acceptez notre utilisation des cookies.",
+  "accept": "Accepter",
+  "decline": "Refuser"
+},
+
+"blockStatus": {
+  "title": "🏆 Statut du dernier bloc miné",
+  "systemActive": "Système actif - En attente du prochain bloc",
+  "lastBlock": "Dernier bloc trouvé :",
+  "noBlock": "Aucun bloc miné pour le moment",
+  "activeParticipants": "Participants actifs :",
+  "nextDraw": "Prochain tirage dans :"
+},
+
+"jackpot": {
+  "title": "🏆 VALEUR DU PROCHAIN BLOC 🏆",
+  "loading": "Chargement du prix Bitcoin...",
+  "reward": "de récompense + frais de transaction",
+  "approximately": "Soit environ",
+  "perBitcoin": "par Bitcoin au cours actuel",
+  "updateEvery": "Mis à jour toutes les 10s",
+  "updatePending": "Mise à jour en attente..."
+},
+
+"minerDashboard": {
+  "mainButton": {
+    "title": "🔴 Miner en Action",
+    "subtitle": "Bitmain Antminer S19 XP - 140 TH/s en temps réel",
+    "status": "ONLINE",
+    "liveData": "Données en direct 🚀"
+  },
+  "floatingButton": {
+    "title": "Voir le miner en action",
+    "text": "Miner en Action"
+  },
+  "header": {
+    "model": "Bitmain Antminer S19 XP",
+    "subtitle": "Mining en Direct 🔴 LIVE",
+    "status": "ONLINE"
+  },
+  "stats": {
+    "hashrate": "HASHRATE",
+    "hashrateUnit": "TH/s",
+    "optimal": "Optimal",
+    "power": "POWER",
+    "powerUnit": "W",
+    "temp": "TEMP",
+    "tempStatus": "✓ Normal",
+    "uptime": "UPTIME",
+    "activity": "Activité"
+  },
+  "advanced": {
+    "hashesTitle": "Hashes Calculés",
+    "totalSince": "Total depuis démarrage",
+    "chancePerBlock": "Chances par bloc",
+    "oneIn": "1 sur",
+    "perBlock": "par bloc",
+    "coolingTitle": "Refroidissement",
+    "fan": "Fan"
+  },
+  "network": {
+    "title": "🌐 Réseau Bitcoin",
+    "hashrate": "Hashrate Réseau",
+    "blockTime": "Temps par bloc",
+    "reward": "Récompense"
+  },
+  "warning": "ℹ️ Aucun bloc trouvé pour le moment. Le minage de Bitcoin est une loterie où chaque hash a une chance égale. Seuls les abonnés Premium seront rémunérés en cas de découverte d'un bloc !",
+  "warningBold1": "Aucun bloc trouvé pour le moment.",
+  "warningBold2": "abonnés Premium",
+  "closeButton": "✕ FERMER LE DASHBOARD"
+},
+
+"conditions": {
+  "title": "Conditions Générales d'Utilisation",
+  "sections": [
+    {
+      "title": "1. Objet",
+      "text": "Les présentes conditions générales régissent l'utilisation du service CryptoLuck Mining, plateforme de participation au minage collaboratif de Bitcoin."
+    },
+    {
+      "title": "2. Inscription et Abonnement",
+      "text": "L'abonnement au service est proposé au tarif de 9,99€ TTC par mois. Le paiement s'effectue via la plateforme Stripe. L'abonnement est renouvelé automatiquement chaque mois jusqu'à résiliation."
+    },
+    {
+      "title": "3. Droit de rétractation",
+      "text": "Conformément à la législation européenne, vous disposez d'un délai de 14 jours pour vous rétracter après la souscription de votre abonnement. Pour exercer ce droit, contactez-nous à contact@cryptoluckmining.com."
+    },
+    {
+      "title": "4. Résiliation",
+      "text": "Vous pouvez résilier votre abonnement à tout moment depuis votre espace personnel ou en nous contactant. La résiliation prendra effet à la fin de la période d'abonnement en cours."
+    },
+    {
+      "title": "5. Fonctionnement du service",
+      "text": "CryptoLuck Mining met à disposition une infrastructure de minage de Bitcoin. La participation donne droit à une part proportionnelle des éventuels gains en cas de découverte d'un bloc. Aucun gain n'est garanti. Le minage de Bitcoin est soumis aux aléas de la blockchain et à la difficulté du réseau."
+    },
+    {
+      "title": "6. Répartition des gains",
+      "text": "En cas de découverte d'un bloc Bitcoin, les gains seront répartis entre tous les abonnés actifs au prorata de leur durée d'abonnement. Les frais de plateforme (7%) seront déduits avant répartition."
+    },
+    {
+      "title": "7. Risques",
+      "text": "L'utilisateur reconnaît que le minage de Bitcoin comporte des risques financiers. La probabilité de miner un bloc est extrêmement faible et les gains ne sont jamais garantis. CryptoLuck Mining ne peut être tenu responsable de l'absence de gains."
+    },
+    {
+      "title": "8. Modification des CGU",
+      "text": "CryptoLuck Mining se réserve le droit de modifier ces conditions à tout moment. Les utilisateurs seront informés par email de toute modification substantielle."
+    }
+  ]
+},
+
+"privacy": {
+  "title": "Politique de Confidentialité",
+  "sections": [
+    {
+      "title": "1. Collecte des données",
+      "text": "Nous collectons les données personnelles suivantes :",
+      "list": [
+        "CRYPTOLUCK MINING",
+        "cryptoluck@gmail.com",
+        "Informations de paiement (traitées par Stripe)"
+      ]
+    },
+    {
+      "title": "2. Utilisation des données",
+      "text": "Vos données sont utilisées pour :",
+      "list": [
+        "Gérer votre abonnement et votre compte",
+        "Traiter les paiements",
+        "Vous informer de l'activité de minage",
+        "Verser les gains éventuels",
+        "Améliorer nos services",
+        "Respecter nos obligations légales"
+      ]
+    },
+    {
+      "title": "3. Partage des données",
+      "text": "Vos données ne sont jamais vendues. Elles peuvent être partagées uniquement avec :",
+      "list": [
+        "Stripe (traitement des paiements)",
+        "Netlify (hébergement)",
+        "Les autorités compétentes en cas d'obligation légale)"
+      ]
+    },
+    {
+      "title": "4. Sécurité",
+      "text": "Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles pour protéger vos données contre tout accès non autorisé, perte ou divulgation."
+    },
+    {
+      "title": "5. Vos droits (RGPD)",
+      "text": "Conformément au RGPD, vous disposez des droits suivants :",
+      "list": [
+        "Droit d'accès à vos données",
+        "Droit de rectification",
+        "Droit à l'effacement",
+        "Droit à la limitation du traitement",
+        "Droit à la portabilité",
+        "Droit d'opposition"
+      ],
+      "note": "Pour exercer ces droits : privacy@cryptoluckmining.com"
+    },
+    {
+      "title": "6. Conservation des données",
+      "text": "Vos données sont conservées pendant la durée de votre abonnement et jusqu'à 3 ans après sa résiliation, conformément aux obligations légales."
+    },
+    {
+      "title": "7. Cookies",
+      "text": "Nous utilisons des cookies essentiels au fonctionnement du site et des cookies analytiques (avec votre consentement) pour améliorer nos services."
+    },
+    {
+      "title": "8. Contact DPO",
+      "text": "Pour toute question concernant la protection de vos données :",
+      "note": "Email : dpo@cryptoluckmining.com"
+    }
+  ]
+},
+
+"contact": {
+  "title": "Contact",
+  "email": "Email",
+  "schedule": "Horaires",
+  
+  "customer_service": {
+    "title": "Service Client",
+    "schedule": "Lundi - Vendredi, 9h - 18h"
+  },
+
+  "tech_support": {
+    "title": "Support Technique",
+    "delay": "Réponse sous 24h ouvrées"
+  },
+
+  "sales": {
+    "title": "Questions Commerciales"
+  },
+
+  "dpo": {
+    "title": "Protection des Données",
+    "email_label": "Email DPO"
+  },
+
+  "address": {
+    "title": "Adresse Postale",
+    "country": "Belgique"
+  },
+
+  "note": "💬 Notre équipe est à votre écoute pour répondre à toutes vos questions concernant le Bitcoin Lottery Mining, votre abonnement ou tout autre sujet."
+},
+
+"legal": {
+  "title": "Mentions Légales",
+
+  "address_label": "Siège social",
+  "email_label": "Email",
+
+  "editor": {
+    "title": "Éditeur du site"
+  },
+
+  "director": {
+    "title": "Directeur de la publication"
+  },
+
+  "hosting": {
+    "title": "Hébergement",
+    "host": "Hébergeur",
+    "address": "Adresse",
+    "website": "Site web"
+  },
+
+  "intellectual": {
+    "title": "Propriété intellectuelle",
+    "text": "L'ensemble du contenu de ce site (textes, images, logos, graphismes, etc.) est protégé par le droit d'auteur et appartient à CryptoLuck Mining ou à ses partenaires. Toute reproduction, même partielle, est strictement interdite sans autorisation préalable écrite."
+  },
+
+  "liability": {
+    "title": "Limitation de responsabilité",
+    "text": "CryptoLuck Mining ne peut être tenu responsable des dommages directs ou indirects résultant de l'utilisation de ce site. Le minage de cryptomonnaies comporte des risques financiers et les gains ne sont jamais garantis."
+  },
+
+  "cookies": {
+    "title": "Cookies",
+    "text": "Ce site utilise des cookies pour améliorer votre expérience de navigation. Vous pouvez gérer vos préférences via la bannière affichée lors de votre première visite."
+  }
+},
+
+"subscription": {
+  "title": "Abonnement Premium",
+  "activation": "Activation immédiate après confirmation",
+  "price": "/mois TTC",
+  "features": [
+    "Participation illimitée à tous les tirages",
+    "144 chances par jour (1 tirage toutes les 10 min)",
+    "Tableau de bord en temps réel",
+    "Notifications instantanées",
+    "Support technique prioritaire",
+    "Statistiques détaillées de vos participations"
+  ],
+  "payment": "Paiement Bitcoin",
+  "amount_label": "Montant à envoyer :",
+  "loading": "Chargement...",
+  "updated": "Prix mis à jour en temps réel",
+  "scan": "Scannez avec votre wallet Bitcoin",
+  "address_label": "Adresse de paiement :",
+  "copy": "Copier l'adresse Bitcoin",
+  "secure": "Paiement sécurisé par la blockchain Bitcoin",
+  "confirmation": "Activation automatique après 3 confirmations (environ 30 minutes)",
+  "button": "S'ABONNER MAINTENANT"
+}
+
+}
+

@@ -1,6 +1,9 @@
 import { useEffect } from 'react'
+import { useTranslation } from "react-i18next"
 
 export default function Contact({ closeModal }) {
+  const { t } = useTranslation()
+
   useEffect(() => {
     const handleEscape = (e) => {
       if (e.key === 'Escape') closeModal()
@@ -26,55 +29,71 @@ export default function Contact({ closeModal }) {
         </button>
         
         <h2 className="text-3xl sm:text-4xl font-bold text-yellow-400 mb-6 border-b-2 border-yellow-400/30 pb-4 clear-both">
-          📧 Contact
+          📧 {t("contact.title")}
         </h2>
         
         <div className="space-y-6 text-gray-300">
+
+          {/* Service client */}
           <div>
-            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">Service Client</h3>
+            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">
+              {t("contact.customer_service.title")}
+            </h3>
             <p className="leading-relaxed">
-              <strong>Email :</strong> contact@cryptoluckmining.com<br />
-              <strong>Horaires :</strong> Lundi - Vendredi, 9h - 18h
+              <strong>{t("contact.email")} :</strong> contact@cryptoluckmining.com<br />
+              <strong>{t("contact.schedule")} :</strong> {t("contact.customer_service.schedule")}
             </p>
           </div>
 
+          {/* Support technique */}
           <div>
-            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">Support Technique</h3>
+            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">
+              {t("contact.tech_support.title")}
+            </h3>
             <p className="leading-relaxed">
-              <strong>Email :</strong> support@cryptoluckmining.com<br />
-              Réponse sous 24h ouvrées
+              <strong>{t("contact.email")} :</strong> support@cryptoluckmining.com<br />
+              {t("contact.tech_support.delay")}
             </p>
           </div>
 
+          {/* Sales */}
           <div>
-            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">Questions Commerciales</h3>
+            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">
+              {t("contact.sales.title")}
+            </h3>
             <p className="leading-relaxed">
-              <strong>Email :</strong> sales@cryptoluckmining.com
+              <strong>{t("contact.email")} :</strong> sales@cryptoluckmining.com
             </p>
           </div>
 
+          {/* DPO */}
           <div>
-            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">Protection des Données</h3>
+            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">
+              {t("contact.dpo.title")}
+            </h3>
             <p className="leading-relaxed">
-              <strong>Email DPO :</strong> dpo@cryptoluckmining.com
+              <strong>{t("contact.dpo.email_label")} :</strong> dpo@cryptoluckmining.com
             </p>
           </div>
 
+          {/* Adresse */}
           <div>
-            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">Adresse Postale</h3>
+            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">
+              {t("contact.address.title")}
+            </h3>
             <p className="leading-relaxed">
               CryptoLuck Mining<br />
               4850 Montzen<br />
-              Belgique
+              {t("contact.address.country")}
             </p>
           </div>
 
           <div className="mt-8 p-6 bg-yellow-400/10 border-2 border-yellow-400/30 rounded-xl">
             <p className="text-center text-base sm:text-lg leading-relaxed">
-              💬 Notre équipe est à votre écoute pour répondre à toutes vos questions concernant 
-              le Bitcoin Lottery Mining, votre abonnement ou tout autre sujet.
+              {t("contact.note")}
             </p>
           </div>
+
         </div>
       </div>
     </div>

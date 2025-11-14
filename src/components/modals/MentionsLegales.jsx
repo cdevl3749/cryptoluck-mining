@@ -1,6 +1,9 @@
 import { useEffect } from 'react'
+import { useTranslation } from "react-i18next"
 
 export default function MentionsLegales({ closeModal }) {
+  const { t } = useTranslation()
+
   useEffect(() => {
     const handleEscape = (e) => {
       if (e.key === 'Escape') closeModal()
@@ -26,59 +29,73 @@ export default function MentionsLegales({ closeModal }) {
         </button>
         
         <h2 className="text-3xl sm:text-4xl font-bold text-yellow-400 mb-6 border-b-2 border-yellow-400/30 pb-4 clear-both">
-          📋 Mentions Légales
+          📋 {t("legal.title")}
         </h2>
         
         <div className="space-y-6 text-gray-300">
-          <div>
-            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">Éditeur du site</h3>
+
+          {/* Éditeur */}
+          <section>
+            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">
+              {t("legal.editor.title")}
+            </h3>
             <p className="leading-relaxed">
               <strong>CryptoLuck Mining</strong><br />
-              <strong>Siège social :</strong> 4850 Montzen<br />
-              {/* <strong>Numéro d'entreprise :</strong> BE [Votre numéro BCE]<br /> */}
-              <strong>Email :</strong> contact@cryptoluckmining.com<br />
+              <strong>{t("legal.address_label")} :</strong> 4850 Montzen<br />
+              <strong>{t("legal.email_label")} :</strong> contact@cryptoluckmining.com<br />
             </p>
-          </div>
+          </section>
 
-          <div>
-            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">Directeur de la publication</h3>
-            <p className="leading-relaxed">CRYPTOLUCK MINING</p>
-          </div>
+          {/* Directeur de publication */}
+          <section>
+            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">
+              {t("legal.director.title")}
+            </h3>
+            <p className="leading-relaxed">CryptoLuck Mining</p>
+          </section>
 
-          <div>
-            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">Hébergement</h3>
+          {/* Hébergeur */}
+          <section>
+            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">
+              {t("legal.hosting.title")}
+            </h3>
             <p className="leading-relaxed">
-              <strong>Hébergeur :</strong> Netlify, Inc.<br />
-              <strong>Adresse :</strong> 2325 3rd Street, Suite 296, San Francisco, CA 94107, USA<br />
-              <strong>Site web :</strong> www.netlify.com
+              <strong>{t("legal.hosting.host")} :</strong> Netlify, Inc.<br />
+              <strong>{t("legal.hosting.address")} :</strong> 2325 3rd Street, Suite 296, San Francisco, CA 94107, USA<br />
+              <strong>{t("legal.hosting.website")} :</strong> www.netlify.com
             </p>
-          </div>
+          </section>
 
-          <div>
-            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">Propriété intellectuelle</h3>
+          {/* Propriété intellectuelle */}
+          <section>
+            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">
+              {t("legal.intellectual.title")}
+            </h3>
             <p className="leading-relaxed">
-              L'ensemble du contenu de ce site (textes, images, logos, graphismes, etc.) est protégé par les droits 
-              d'auteur et appartient à CryptoLuck Mining ou à ses partenaires. Toute reproduction, même partielle, 
-              est strictement interdite sans autorisation préalable écrite.
+              {t("legal.intellectual.text")}
             </p>
-          </div>
+          </section>
 
-          <div>
-            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">Limitation de responsabilité</h3>
+          {/* Limitation de responsabilité */}
+          <section>
+            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">
+              {t("legal.liability.title")}
+            </h3>
             <p className="leading-relaxed">
-              CryptoLuck Mining ne peut être tenu responsable des dommages directs ou indirects résultant de 
-              l'utilisation de ce site. Le minage de cryptomonnaies comporte des risques financiers. Les gains 
-              ne sont jamais garantis.
+              {t("legal.liability.text")}
             </p>
-          </div>
+          </section>
 
-          <div>
-            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">Cookies</h3>
+          {/* Cookies */}
+          <section>
+            <h3 className="text-2xl text-cyan-400 font-semibold mb-3">
+              {t("legal.cookies.title")}
+            </h3>
             <p className="leading-relaxed">
-              Ce site utilise des cookies pour améliorer votre expérience de navigation. Vous pouvez gérer vos 
-              préférences de cookies via la bannière qui apparaît lors de votre première visite.
+              {t("legal.cookies.text")}
             </p>
-          </div>
+          </section>
+
         </div>
       </div>
     </div>

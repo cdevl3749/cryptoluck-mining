@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export default function CookieBanner() {
   const [showBanner, setShowBanner] = useState(false)
+  const { t } = useTranslation()
 
   useEffect(() => {
     const cookieAccepted = localStorage.getItem('cookieAccepted')
@@ -27,7 +29,7 @@ export default function CookieBanner() {
         <div className="flex-1 flex items-center gap-3">
           <span className="text-3xl sm:text-4xl">🍪</span>
           <p className="text-white text-sm sm:text-base leading-relaxed">
-            Nous utilisons des cookies pour améliorer votre expérience sur notre site. En continuant à naviguer, vous acceptez notre utilisation des cookies.
+            {t('cookie.message')}
           </p>
         </div>
         
@@ -36,13 +38,13 @@ export default function CookieBanner() {
             onClick={acceptCookies}
             className="bg-gradient-to-r from-green-400 to-green-600 text-white px-8 py-3 rounded-full font-bold hover:scale-105 transition-transform shadow-lg text-base sm:text-lg"
           >
-            Accepter
+            {t('cookie.accept')}
           </button>
           <button
             onClick={declineCookies}
             className="bg-gray-700 hover:bg-gray-600 border-2 border-gray-500 text-white px-8 py-3 rounded-full font-bold hover:scale-105 transition-transform shadow-lg text-base sm:text-lg"
           >
-            Refuser
+            {t('cookie.decline')}
           </button>
         </div>
       </div>
