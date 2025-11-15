@@ -58,7 +58,7 @@ export function HreflangLinks() {
   const baseUrl = 'https://cryptoluck-mining.netlify.app';
 
   useEffect(() => {
-    // Supprimer les anciens liens hreflang
+    // Supprimer les anciens liens hreflang avant
     document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(el => el.remove());
 
     // Ajouter les nouveaux liens hreflang
