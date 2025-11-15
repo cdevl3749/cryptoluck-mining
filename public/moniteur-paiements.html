@@ -422,11 +422,6 @@
                     ❌ Mot de passe incorrect
                 </div>
             </form>
-            
-            <div class="info-text">
-                💡 Mot de passe par défaut : <strong>admin123</strong><br>
-                <span style="color: #ef4444; font-size: 11px;">⚠️ Changez-le dans le code source !</span>
-            </div>
         </div>
     </div>
 
@@ -628,9 +623,14 @@
                 document.getElementById('totalReceived').textContent = formatBTC(data.total_received) + ' BTC';
                 document.getElementById('lastCheck').textContent = new Date().toLocaleTimeString('fr-FR');
                 
-                // Détecter nouveau paiement
-                if (lastTxCount > 0 && data.n_tx > lastTxCount) {
-                    const newTxCount = data.n_tx - lastTxCount;
+                // 🆕 Compter seulement les transactions récentes (après le 15/11/2025)
+                const launchDate = new Date('2025-11-15').getTime() / 1000;
+                const recentTxs = data.txs.filter(tx => tx.time >= launchDate);
+                const recentTxCount = recentTxs.length;
+                
+                // Détecter nouveau paiement (seulement parmi les transactions récentes)
+                if (lastTxCount > 0 && recentTxCount > lastTxCount) {
+                    const newTxCount = recentTxCount - lastTxCount;
                     playNotificationSound();
                     showBrowserNotification(
                         '🎉 Nouveau paiement reçu !',
@@ -639,7 +639,7 @@
                     showAlert(`🎉 ${newTxCount} nouveau(x) paiement(s) détecté(s) !`, 'success');
                 }
                 
-                lastTxCount = data.n_tx;
+                lastTxCount = recentTxCount;
                 lastBalance = data.final_balance;
                 
                 // Afficher les transactions
@@ -655,17 +655,22 @@
         function displayTransactions(txs) {
             const container = document.getElementById('transactions');
             
-            if (!txs || txs.length === 0) {
+            // 🆕 Filtrer les transactions après le lancement du site (15 novembre 2025)
+            const launchDate = new Date('2025-11-15').getTime() / 1000; // Timestamp Unix
+            const recentTxs = txs.filter(tx => tx.time >= launchDate);
+            
+            if (!recentTxs || recentTxs.length === 0) {
                 container.innerHTML = `
                     <div class="empty-state">
                         <div class="empty-state-icon">📭</div>
-                        <p>Aucune transaction</p>
+                        <p>Aucune transaction récente</p>
+                        <p style="font-size: 14px; margin-top: 10px; color: #9ca3af;">En attente de nouveaux paiements depuis le 15/11/2025</p>
                     </div>
                 `;
                 return;
             }
             
-            container.innerHTML = txs.slice(0, 10).map(tx => {
+            container.innerHTML = recentTxs.slice(0, 10).map(tx => {
                 const received = tx.result > 0;
                 const amount = formatBTC(Math.abs(tx.result));
                 const time = formatDate(tx.time);
