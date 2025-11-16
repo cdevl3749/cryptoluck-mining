@@ -1,7 +1,7 @@
 {
   "home": {
     "welcome": "Bienvenue sur CryptoLuck",
-    "subscribe": "S’abonner maintenant"
+    "subscribe": "S'abonner maintenant"
   },
   "header": {
     "title": "CRYPTOLUCK MINING",
@@ -83,7 +83,7 @@
   "systemActive": "Système actif - En attente du prochain bloc",
   "lastBlock": "Dernier bloc trouvé :",
   "noBlock": "Aucun bloc miné pour le moment",
-  "activeParticipants": "Participants actifs :",
+  "activeParticipants": "Mineurs actifs :",
   "nextDraw": "Prochain tirage dans :"
 },
 
@@ -339,8 +339,146 @@
   "copy": "Copier l'adresse Bitcoin",
   "secure": "Paiement sécurisé par la blockchain Bitcoin",
   "confirmation": "Activation automatique après 3 confirmations (environ 30 minutes)",
-  "button": "S'ABONNER MAINTENANT"
-}
+  "button": "S'ABONNER MAINTENANT",
+  "active_miners": "mineurs actifs en ce moment",
+  "next_block": "Prochain bloc : ~10 minutes",
+  "active_miners_short": "Mineurs actifs",
+  "draws_per_day": "Tirages/jour",
+  "recent_activity": "Activité récente",
+  "just_subscribed": "vient de s'abonner",
+  "minutes_ago": "il y a",
+  "min": "min",
+  "guarantee": "Satisfait ou remboursé sous 14 jours",
+  "guarantee_desc": "Conformément à la loi européenne",
+  "steps_title": "Étapes d'inscription :",
+  "step1": "Scannez le QR code avec votre wallet Bitcoin",
+  "step2": "Envoyez le montant exact en BTC",
+  "step3": "Attendez 3 confirmations (~30 min)",
+  "step4": "Votre compte est activé automatiquement !",
+  "urgency": "Offre limitée : Rejoignez les",
+  "urgency_end": "premiers mineurs !",
+  "testimonials_title": "Ce que disent nos mineurs",
+  "testimonial1": "Interface simple et transparente. J'aime voir le miner en temps réel !",
+  "testimonial1_author": "Marc L., France",
+  "testimonial2": "Super concept ! J'adore l'approche loterie pour le minage Bitcoin.",
+  "testimonial2_author": "Emma K., Belgique",
+  "testimonial3": "Concept intéressant ! Excitant chaque jour.",
+  "testimonial3_author": "Yuki, Japon",
+  "copied": "✓ Adresse copiée !",
+  "error_copy": "Échec de la copie",
+  "payment_instructions": "Instructions de paiement :",
+  "wallet_address": "Adresse du portefeuille Bitcoin",
+  "amount_btc": "Montant exact à envoyer",
+  "confirmations_needed": "Confirmations nécessaires",
+  "estimated_time": "Temps estimé",
+  "important_note": "Important :",
+  "exact_amount_warning": "Envoyez le montant EXACT en BTC. Tout autre montant n'activera pas votre abonnement.",
+  "network_fee_info": "Incluez les frais de réseau dans votre transaction",
+  "support_contact": "Besoin d'aide ? Contactez le support :",
+  "email_support": "support@cryptoluck-mining.com"
+},
 
+"blog": {
+  "title": "Blog CryptoLuck",
+  "subtitle": "Actualités et guides sur le Bitcoin Mining",
+  "backToArticles": "Retour aux articles",
+  "readArticle": "Lire l'article",
+  "moreArticlesSoon": "Plus d'articles à venir...",
+  "comingSoonDesc": "Revenez bientôt pour découvrir de nouveaux guides !",
+  "comingSoon": "À venir",
+  "readTime": "min de lecture",
+  "articles": {
+    "bitcoin-mining-2025": {
+      "id": "bitcoin-mining-2025",
+      "title": "Le Minage de Bitcoin en 2025 : Guide Complet",
+      "category": "Guide",
+      "date": "15 novembre 2025",
+      "publishDateISO": "2025-11-15",
+      "readTime": "8",
+      "excerpt": "Découvrez comment le minage de Bitcoin a évolué en 2025 et ce que vous devez savoir pour vous lancer.",
+      "content": {
+        "intro": "Le minage de Bitcoin en 2025 a connu une transformation majeure. Avec le dernier halving effectué en avril 2024, le paysage du minage a considérablement évolué, offrant de nouvelles opportunités tout en posant des défis uniques.",
+        
+        "section1": {
+          "title": "Qu'est-ce que le Minage de Bitcoin ?",
+          "text": "Le minage de Bitcoin est le processus par lequel de nouveaux bitcoins sont créés et les transactions sont vérifiées sur la blockchain. Les mineurs utilisent une puissance de calcul spécialisée pour résoudre des problèmes mathématiques complexes. Lorsqu'un mineur résout avec succès un problème, il ajoute un nouveau bloc à la blockchain et reçoit une récompense en bitcoin."
+        },
+        
+        "section2": {
+          "title": "Le Halving de 2024 : Un Tournant Décisif",
+          "text": "En avril 2024, Bitcoin a subi son quatrième halving, réduisant la récompense par bloc de 6,25 BTC à 3,125 BTC. Cet événement, qui se produit environ tous les quatre ans, impacte directement la rentabilité du minage. Les mineurs doivent désormais être encore plus efficaces pour rester rentables avec une récompense réduite."
+        },
+        
+        "section3": {
+          "title": "L'Équipement de Minage en 2025",
+          "text": "Les mineurs ASIC modernes ont atteint des niveaux d'efficacité sans précédent. Les machines de dernière génération offrent des taux de hachage supérieurs à 140 TH/s tout en consommant moins d'énergie par terahash que jamais auparavant. Cependant, l'investissement initial reste substantiel, oscillant souvent entre 3 000 et 15 000 dollars par unité."
+        },
+        
+        "section4": {
+          "title": "Les Coûts Énergétiques : Le Facteur Critique",
+          "text": "En 2025, les coûts énergétiques demeurent la principale dépense pour les mineurs. Avec l'augmentation de la difficulté du réseau et la réduction des récompenses, l'accès à une électricité bon marché (idéalement inférieure à 0,06 $ par kWh) est devenu essentiel pour la rentabilité. De nombreuses opérations de minage se sont relocalisées dans des régions disposant d'énergies renouvelables abondantes."
+        },
+        
+        "section5": {
+          "title": "Pools de Minage vs Minage Solo",
+          "text": "Le minage en solo est devenu pratiquement impossible pour les mineurs individuels en raison de la difficulté massive du réseau. Les pools de minage, où les mineurs combinent leur puissance de calcul et partagent les récompenses proportionnellement, sont devenus la norme. Ces pools offrent des paiements plus réguliers, bien que plus modestes."
+        },
+        
+        "section6": {
+          "title": "L'Essor du Cloud Mining",
+          "text": "Les services de cloud mining ont gagné en popularité, permettant aux particuliers de participer au minage de Bitcoin sans acheter ni entretenir de matériel coûteux. Cependant, il est crucial de rechercher minutieusement les fournisseurs car ce secteur a connu de nombreuses arnaques."
+        },
+        
+        "section7": {
+          "title": "Difficulté du Réseau et Concurrence",
+          "text": "La difficulté du réseau Bitcoin a atteint des sommets historiques en 2025, avec un taux de hachage mondial dépassant 600 EH/s. Cette concurrence accrue signifie que trouver un bloc est devenu exponentiellement plus difficile, nécessitant des ressources computationnelles considérables."
+        },
+        
+        "section8": {
+          "title": "Considérations Environnementales",
+          "text": "L'impact environnemental du minage de Bitcoin reste un sujet brûlant. De nombreuses opérations de minage ont adopté des sources d'énergie renouvelables, avec plus de 50% du minage mondial désormais alimenté par de l'énergie durable. Cette transition est motivée à la fois par des préoccupations environnementales et des avantages économiques."
+        },
+        
+        "section9": {
+          "title": "Réglementations et Conformité",
+          "text": "En 2025, le minage de Bitcoin fait face à une surveillance réglementaire accrue dans le monde entier. Plusieurs pays ont mis en place des réglementations spécifiques pour les opérations de minage, incluant des plafonds de consommation énergétique, des cadres fiscaux et des exigences de conformité environnementale. Se tenir informé des réglementations locales est essentiel."
+        },
+        
+        "section10": {
+          "title": "Le Minage de Bitcoin est-il Encore Rentable ?",
+          "text": "La rentabilité dépend de multiples facteurs : coûts d'électricité, efficacité du matériel, prix du marché du Bitcoin et difficulté du réseau. Alors que les grandes opérations avec accès à une énergie bon marché peuvent encore générer des profits, les petits mineurs individuels font face à des défis importants. Un calcul minutieux de tous les coûts est essentiel avant d'investir."
+        },
+        
+        "conclusion": {
+          "title": "Conclusion",
+          "text": "Le minage de Bitcoin en 2025 nécessite un investissement significatif, une expertise technique et un accès à une énergie abordable. Bien que les barrières à l'entrée aient augmenté, le minage reste fondamental pour la sécurité et la décentralisation de Bitcoin. Pour ceux qui envisagent de se lancer dans ce domaine, des recherches approfondies et des attentes réalistes sont cruciales."
+        }
+      }
+    },
+    "bitcoin-lottery-esp32-guide": {
+      "id": "bitcoin-lottery-esp32-guide",
+      "title": "Configurer un ESP32 pour le Bitcoin Lottery Mining (2025)",
+      "category": "Tutoriel",
+      "date": "21 novembre 2025",
+      "publishDateISO": "2025-11-21",
+      "readTime": "6",
+      "excerpt": "Apprenez à utiliser un ESP32 pour expérimenter le Bitcoin Lottery Mining : un projet éducatif simple et amusant.",
+      "content": {
+        "intro": "Le Bitcoin Lottery Mining est une manière éducative et ludique de découvrir comment fonctionne le minage Bitcoin. Avec un simple microcontrôleur ESP32, vous pouvez réaliser un minage « style loterie » : les chances de trouver un bloc sont presque nulles, mais le processus vous permet de comprendre la preuve de travail et la blockchain. Dans ce guide, vous apprendrez à installer, configurer et lancer votre ESP32 pour participer à cette expérience.",
+        "section1": { "title": "1. Le but de ce tutoriel", "text": "L'objectif est de vous guider pour transformer un ESP32 en mini-mineur Bitcoin éducatif. Vous apprendrez comment le hashing fonctionne, comment le minage tente de résoudre une preuve de travail et pourquoi un ESP32 est des milliards de fois moins puissant qu'un ASIC. Ce tutoriel n'a pas pour but de vous faire gagner du Bitcoin, mais de vous faire comprendre le mécanisme profond du minage." },
+        "section2": { "title": "2. Qu'est-ce que le Bitcoin Lottery Mining ?", "text": "Le Bitcoin Lottery Mining consiste à faire du minage de manière extrêmement faible en puissance, en espérant — comme à la loterie — tomber sur un hash valide. Un ESP32 calcule quelques milliers de hashes par seconde, tandis que les ASIC modernes dépassent les centaines de TH/s. Les probabilités sont donc astronomiques, mais cette méthode reste parfaite pour apprendre à miner sans matériel coûteux." },
+        "section3": { "title": "3. Présentation rapide du ESP32", "text": "L'ESP32 est un microcontrôleur Wi-Fi/Bluetooth très abordable, capable d'exécuter du code C++ ou MicroPython. Il est idéal pour des projets DIY. Voici un exemple de module ESP32 que vous pouvez utiliser :\n\n<img src=\"https://cdn.sparkfun.com/assets/parts/1/3/0/2/4/17381-SparkFun_Thing_Plus_ESP32_WROOM-01.jpg\" alt=\"Photo ESP32\" class=\"rounded-lg border border-gray-600 mt-4 w-full max-w-sm mx-auto\" />" },
+        "section4": { "title": "4. Matériel nécessaire", "text": "• 1× carte ESP32 (n'importe quel modèle DevKit)\n• 1× câble USB\n• Un ordinateur Windows, macOS ou Linux\n• (Optionnel) un mini-écran OLED pour les statistiques\n• (Optionnel) un boîtier ou support imprimé 3D" },
+        "section5": { "title": "5. Préparation du poste de travail", "text": "Commencez par installer l'environnement de développement :\n1. Téléchargez Arduino IDE ou PlatformIO.\n2. Ajoutez le support ESP32 via le gestionnaire de cartes.\n3. Vérifiez que votre ESP32 est détecté sur le port série.\n\nUne fois cela fait, votre environnement est prêt pour lancer le code du miner." },
+        "section6": { "title": "6. Installer un firmware de Lottery Mining", "text": "Il existe plusieurs projets open source permettant d'exécuter du hashing SHA-256 sur ESP32, tels que MicroMiner ou ESP32 Bitcoin Miner. Téléchargez le repository et ouvrez le fichier principal dans Arduino IDE. Le firmware générera en continu des tentatives de hachage, simulant un minage réel mais à très faible puissance." },
+        "section7": { "title": "7. Configurer les paramètres du miner", "text": "Dans le fichier de configuration, vous pouvez généralement définir :\n• la difficulté locale (pour voir des résultats plus rapides),\n• la fréquence CPU de l'ESP32,\n• l'affichage des hashes par seconde.\n\nCes paramètres ne changent pas vos chances de trouver un vrai bloc, mais ils aident à visualiser le fonctionnement interne." },
+        "section8": { "title": "8. Upload du code sur votre ESP32", "text": "Branchez votre ESP32, sélectionnez le bon port dans Arduino IDE, puis cliquez sur « Upload ». Après quelques secondes, le microcontrôleur redémarre et commence automatiquement à calculer des hashes SHA-256. Vous pouvez utiliser le moniteur série pour suivre les tentatives en temps réel." },
+        "section9": { "title": "9. Ce qui se passe réellement", "text": "Votre ESP32 génère des blocs de données aléatoires, les hache avec SHA-256, puis compare le résultat avec une cible. C'est exactement ce que font les mineurs Bitcoin, mais à une échelle infiniment plus petite. Le but n'est pas la performance, mais la compréhension du concept : chaque hash est un ticket de loterie." },
+        "section10": { "title": "10. Vos chances de réussir", "text": "Avec un ESP32, vos chances sont pratiquement nulles : un ASIC moderne réalise jusqu'à un billion de fois plus de calculs. Mais cette impossibilité est précisément ce qui rend ce projet éducatif : vous participez au même processus que les vrais mineurs, mais à petite échelle, sans investissement massif." },
+        "conclusion": { "title": "Conclusion", "text": "Vous disposez désormais d'un mini-mineur Bitcoin éducatif, idéal pour comprendre la preuve de travail et le fonctionnement interne du réseau Bitcoin. Même si l'ESP32 n'a aucune chance de miner un bloc, il vous permet d'apprendre les fondamentaux du minage de manière simple, ludique et accessible. Une excellente manière d'explorer le monde du Bitcoin !" }
+      }
+    }
+  }
+}
 }
 

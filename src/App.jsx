@@ -17,6 +17,7 @@ import Conditions from './components/modals/Conditions'
 import Confidentialite from './components/modals/Confidentialite'
 import Contact from './components/modals/Contact'
 import MinerDashboard from './components/MinerDashboard'
+import BlogModal from './components/modals/BlogModal'
 
 // Composant LanguageSelector intégré avec drapeaux SVG
 function LanguageSelector() {
@@ -156,7 +157,7 @@ function App() {
       <HreflangLinks />
       
       <CookieBanner />
-      <Header />
+      <Header openModal={openModal} />  {/* 🔧 MODIFIÉ ICI */}
       
       {/* Sélecteur de langue - Positionné en haut à droite */}
       <div className="absolute top-4 right-4 z-50">
@@ -192,6 +193,7 @@ function App() {
       {activeModal === 'conditions' && <Conditions closeModal={closeModal} />}
       {activeModal === 'confidentialite' && <Confidentialite closeModal={closeModal} />}
       {activeModal === 'contact' && <Contact closeModal={closeModal} />}
+      {activeModal === 'blog' && <BlogModal closeModal={closeModal} />}  {/* 🔧 AJOUTÉ ICI */}
     </div>
   )
 }

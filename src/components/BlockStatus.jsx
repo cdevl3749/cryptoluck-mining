@@ -37,7 +37,7 @@ export default function BlockStatus() {
                 <strong className="text-white">{t('blockStatus.lastBlock')}</strong> {t('blockStatus.noBlock')}
               </div>
               <div>
-                <strong className="text-white">{t('blockStatus.activeParticipants')}</strong> 17
+                <strong className="text-white">{t('blockStatus.activeParticipants')}</strong> 87
               </div>
               <div>
                 <strong className="text-white">{t('blockStatus.nextDraw')}</strong> {countdown}

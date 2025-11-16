@@ -30,7 +30,7 @@
   "explanation": {
     "title": "What is Bitcoin Lottery Mining?",
     "paragraph1": "Bitcoin Lottery Mining is an innovative approach to Bitcoin mining that turns computing power into opportunity. Unlike traditional mining, which requires massive hardware investments, our system uses the Bitmain Antminer S19 XP to attempt to discover the next Bitcoin block.",
-    "paragraph2": "Each participant becomes part of this decentralized lottery where luck can strike at any time. With every draw, your subscription gives you a real chance to become part of Bitcoin’s blockchain history!"
+    "paragraph2": "Each participant becomes part of this decentralized lottery where luck can strike at any time. With every draw, your subscription gives you a real chance to become part of Bitcoin's blockchain history!"
   },
 
   "lottery": {
@@ -73,274 +73,412 @@
   },
 
   "cookie": {
-  "message": "We use cookies to improve your experience on our site. By continuing to browse, you accept our use of cookies.",
-  "accept": "Accept",
-  "decline": "Decline"
-},
-
-"blockStatus": {
+    "message": "We use cookies to improve your experience on our site. By continuing to browse, you accept our use of cookies.",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "blockStatus": {
   "title": "🏆 Last Mined Block Status",
   "systemActive": "System active - Waiting for next block",
   "lastBlock": "Last block found:",
   "noBlock": "No block mined yet",
-  "activeParticipants": "Active participants:",
+  "activeParticipants": "Active miners:",
   "nextDraw": "Next draw in:"
 },
 
-"jackpot": {
-  "title": "🏆 NEXT BLOCK VALUE 🏆",
-  "loading": "Loading Bitcoin price...",
-  "reward": "block reward + transaction fees",
-  "approximately": "Approximately",
-  "perBitcoin": "per Bitcoin at current rate",
-  "updateEvery": "Updated every 10s",
-  "updatePending": "Update pending..."
-},
+  "jackpot": {
+    "title": "🏆 NEXT BLOCK VALUE 🏆",
+    "loading": "Loading Bitcoin price...",
+    "reward": "block reward + transaction fees",
+    "approximately": "Approximately",
+    "perBitcoin": "per Bitcoin at current rate",
+    "updateEvery": "Updated every 10s",
+    "updatePending": "Update pending..."
+  },
 
-"minerDashboard": {
-  "mainButton": {
-    "title": "🔴 Miner in Action",
-    "subtitle": "Bitmain Antminer S19 XP - 140 TH/s real-time",
-    "status": "ONLINE",
-    "liveData": "Live Data 🚀"
+  "minerDashboard": {
+    "mainButton": {
+      "title": "🔴 Miner in Action",
+      "subtitle": "Bitmain Antminer S19 XP - 140 TH/s real-time",
+      "status": "ONLINE",
+      "liveData": "Live Data 🚀"
+    },
+    "floatingButton": {
+      "title": "View miner in action",
+      "text": "Miner in Action"
+    },
+    "header": {
+      "model": "Bitmain Antminer S19 XP",
+      "subtitle": "Live Mining 🔴 LIVE",
+      "status": "ONLINE"
+    },
+    "stats": {
+      "hashrate": "HASHRATE",
+      "hashrateUnit": "TH/s",
+      "optimal": "Optimal",
+      "power": "POWER",
+      "powerUnit": "W",
+      "temp": "TEMP",
+      "tempStatus": "✓ Normal",
+      "uptime": "UPTIME",
+      "activity": "Activity"
+    },
+    "advanced": {
+      "hashesTitle": "Calculated Hashes",
+      "totalSince": "Total since startup",
+      "chancePerBlock": "Chance per block",
+      "oneIn": "1 in",
+      "perBlock": "per block",
+      "coolingTitle": "Cooling",
+      "fan": "Fan"
+    },
+    "network": {
+      "title": "🌐 Bitcoin Network",
+      "hashrate": "Network Hashrate",
+      "blockTime": "Block Time",
+      "reward": "Reward"
+    },
+    "warning": "ℹ️ No block found yet. Bitcoin mining is a lottery where each hash has an equal chance. Only Premium subscribers will be rewarded if a block is discovered!",
+    "warningBold1": "No block found yet.",
+    "warningBold2": "Premium subscribers",
+    "closeButton": "✕ CLOSE DASHBOARD"
   },
-  "floatingButton": {
-    "title": "View miner in action",
-    "text": "Miner in Action"
-  },
-  "header": {
-    "model": "Bitmain Antminer S19 XP",
-    "subtitle": "Live Mining 🔴 LIVE",
-    "status": "ONLINE"
-  },
-  "stats": {
-    "hashrate": "HASHRATE",
-    "hashrateUnit": "TH/s",
-    "optimal": "Optimal",
-    "power": "POWER",
-    "powerUnit": "W",
-    "temp": "TEMP",
-    "tempStatus": "✓ Normal",
-    "uptime": "UPTIME",
-    "activity": "Activity"
-  },
-  "advanced": {
-    "hashesTitle": "Calculated Hashes",
-    "totalSince": "Total since startup",
-    "chancePerBlock": "Chance per block",
-    "oneIn": "1 in",
-    "perBlock": "per block",
-    "coolingTitle": "Cooling",
-    "fan": "Fan"
-  },
-  "network": {
-    "title": "🌐 Bitcoin Network",
-    "hashrate": "Network Hashrate",
-    "blockTime": "Block Time",
-    "reward": "Reward"
-  },
-  "warning": "ℹ️ No block found yet. Bitcoin mining is a lottery where each hash has an equal chance. Only Premium subscribers will be rewarded if a block is discovered!",
-  "warningBold1": "No block found yet.",
-  "warningBold2": "Premium subscribers",
-  "closeButton": "✕ CLOSE DASHBOARD"
-},
 
-"conditions": {
-  "title": "Terms and Conditions",
-  "sections": [
-    {
-      "title": "1. Purpose",
-      "text": "These terms govern the use of the CryptoLuck Mining service, a collaborative Bitcoin mining participation platform."
+  "conditions": {
+    "title": "Terms and Conditions",
+    "sections": [
+      {
+        "title": "1. Purpose",
+        "text": "These terms govern the use of the CryptoLuck Mining service, a collaborative Bitcoin mining participation platform."
+      },
+      {
+        "title": "2. Registration and Subscription",
+        "text": "The subscription is offered at €9.99 per month, VAT included. Payment is processed through Stripe. The subscription renews automatically each month until cancelled."
+      },
+      {
+        "title": "3. Right of Withdrawal",
+        "text": "In accordance with European law, you have 14 days to withdraw after subscribing. To exercise this right, contact us at contact@cryptoluckmining.com."
+      },
+      {
+        "title": "4. Cancellation",
+        "text": "You may cancel your subscription at any time from your account or by contacting us. The cancellation will take effect at the end of the current billing period."
+      },
+      {
+        "title": "5. Service Operation",
+        "text": "CryptoLuck Mining provides a Bitcoin mining infrastructure. Participation entitles users to a proportional share of any block rewards if a block is mined. No earnings are guaranteed. Bitcoin mining is subject to blockchain randomness and network difficulty."
+      },
+      {
+        "title": "6. Reward Distribution",
+        "text": "If a Bitcoin block is mined, rewards are distributed among all active subscribers based on subscription duration. Platform fees (7%) are deducted before distribution."
+      },
+      {
+        "title": "7. Risks",
+        "text": "Users acknowledge that Bitcoin mining involves financial risks. The probability of mining a block is extremely low, and earnings are never guaranteed. CryptoLuck Mining cannot be held responsible for the absence of rewards."
+      },
+      {
+        "title": "8. Modification of Terms",
+        "text": "CryptoLuck Mining reserves the right to modify these terms at any time. Users will be informed by email of any significant changes."
+      }
+    ]
+  },
+
+  "privacy": {
+    "title": "Privacy Policy",
+    "sections": [
+      {
+        "title": "1. Data Collection",
+        "text": "We collect the following personal data:",
+        "list": [
+          "CRYPTOLUCK MINING",
+          "cryptoluck@gmail.com",
+          "Payment information (processed by Stripe)"
+        ]
+      },
+      {
+        "title": "2. Use of Data",
+        "text": "Your data is used to:",
+        "list": [
+          "Manage your subscription and account",
+          "Process payments",
+          "Notify you about mining activity",
+          "Distribute potential rewards",
+          "Improve our services",
+          "Comply with legal obligations"
+        ]
+      },
+      {
+        "title": "3. Data Sharing",
+        "text": "Your data is never sold. It may be shared only with:",
+        "list": [
+          "Stripe (payment processing)",
+          "Netlify (website hosting)",
+          "Competent authorities when legally required"
+        ]
+      },
+      {
+        "title": "4. Security",
+        "text": "We implement technical and organizational security measures to protect your data against unauthorized access, loss, or disclosure."
+      },
+      {
+        "title": "5. Your Rights (GDPR)",
+        "text": "In accordance with GDPR, you have the following rights:",
+        "list": [
+          "Right of access",
+          "Right to rectification",
+          "Right to erasure",
+          "Right to restrict processing",
+          "Right to data portability",
+          "Right to object"
+        ],
+        "note": "To exercise these rights: privacy@cryptoluckmining.com"
+      },
+      {
+        "title": "6. Data Retention",
+        "text": "Your data is kept for the duration of your subscription and up to 3 years after cancellation, in accordance with legal and accounting obligations."
+      },
+      {
+        "title": "7. Cookies",
+        "text": "We use essential cookies for website operation and analytics cookies (with your consent) to improve our services."
+      },
+      {
+        "title": "8. DPO Contact",
+        "text": "For any question regarding data protection:",
+        "note": "Email: dpo@cryptoluckmining.com"
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Contact",
+    "email": "Email",
+    "schedule": "Schedule",
+
+    "customer_service": {
+      "title": "Customer Service",
+      "schedule": "Monday - Friday, 9 AM - 6 PM"
     },
-    {
-      "title": "2. Registration and Subscription",
-      "text": "The subscription is offered at €9.99 per month, VAT included. Payment is processed through Stripe. The subscription renews automatically each month until cancelled."
+
+    "tech_support": {
+      "title": "Technical Support",
+      "delay": "Response within 24 business hours"
     },
-    {
-      "title": "3. Right of Withdrawal",
-      "text": "In accordance with European law, you have 14 days to withdraw after subscribing. To exercise this right, contact us at contact@cryptoluckmining.com."
+
+    "sales": {
+      "title": "Sales Inquiries"
     },
-    {
-      "title": "4. Cancellation",
-      "text": "You may cancel your subscription at any time from your account or by contacting us. The cancellation will take effect at the end of the current billing period."
+
+    "dpo": {
+      "title": "Data Protection Officer",
+      "email_label": "DPO Email"
     },
-    {
-      "title": "5. Service Operation",
-      "text": "CryptoLuck Mining provides a Bitcoin mining infrastructure. Participation entitles users to a proportional share of any block rewards if a block is mined. No earnings are guaranteed. Bitcoin mining is subject to blockchain randomness and network difficulty."
+
+    "address": {
+      "title": "Postal Address",
+      "country": "Belgium"
     },
-    {
-      "title": "6. Reward Distribution",
-      "text": "If a Bitcoin block is mined, rewards are distributed among all active subscribers based on subscription duration. Platform fees (7%) are deducted before distribution."
+
+    "note": "💬 Our team is here to answer any questions about Bitcoin Lottery Mining, your subscription, or any other topic."
+  },
+
+  "legal": {
+    "title": "Legal Notice",
+
+    "address_label": "Head Office",
+    "email_label": "Email",
+
+    "editor": {
+      "title": "Website Publisher"
     },
-    {
-      "title": "7. Risks",
-      "text": "Users acknowledge that Bitcoin mining involves financial risks. The probability of mining a block is extremely low, and earnings are never guaranteed. CryptoLuck Mining cannot be held responsible for the absence of rewards."
+
+    "director": {
+      "title": "Publication Director"
     },
-    {
-      "title": "8. Modification of Terms",
-      "text": "CryptoLuck Mining reserves the right to modify these terms at any time. Users will be informed by email of any significant changes."
+
+    "hosting": {
+      "title": "Hosting",
+      "host": "Host",
+      "address": "Address",
+      "website": "Website"
+    },
+
+    "intellectual": {
+      "title": "Intellectual Property",
+      "text": "All content on this website (texts, images, logos, graphics, etc.) is protected by copyright and belongs to CryptoLuck Mining or its partners. Any reproduction, even partial, is strictly prohibited without prior written authorization."
+    },
+
+    "liability": {
+      "title": "Liability Limitation",
+      "text": "CryptoLuck Mining cannot be held responsible for direct or indirect damages resulting from the use of this website. Cryptocurrency mining involves financial risks and profits are never guaranteed."
+    },
+
+    "cookies": {
+      "title": "Cookies",
+      "text": "This site uses cookies to enhance your browsing experience. You can manage your preferences via the banner displayed on your first visit."
     }
-  ]
-},
-
-"privacy": {
-  "title": "Privacy Policy",
-  "sections": [
-    {
-      "title": "1. Data Collection",
-      "text": "We collect the following personal data:",
-      "list": [
-        "CRYPTOLUCK MINING",
-        "cryptoluck@gmail.com",
-        "Payment information (processed by Stripe)"
-      ]
-    },
-    {
-      "title": "2. Use of Data",
-      "text": "Your data is used to:",
-      "list": [
-        "Manage your subscription and account",
-        "Process payments",
-        "Notify you about mining activity",
-        "Distribute potential rewards",
-        "Improve our services",
-        "Comply with legal obligations"
-      ]
-    },
-    {
-      "title": "3. Data Sharing",
-      "text": "Your data is never sold. It may be shared only with:",
-      "list": [
-        "Stripe (payment processing)",
-        "Netlify (website hosting)",
-        "Competent authorities when legally required"
-      ]
-    },
-    {
-      "title": "4. Security",
-      "text": "We implement technical and organizational security measures to protect your data against unauthorized access, loss, or disclosure."
-    },
-    {
-      "title": "5. Your Rights (GDPR)",
-      "text": "In accordance with GDPR, you have the following rights:",
-      "list": [
-        "Right of access",
-        "Right to rectification",
-        "Right to erasure",
-        "Right to restrict processing",
-        "Right to data portability",
-        "Right to object"
-      ],
-      "note": "To exercise these rights: privacy@cryptoluckmining.com"
-    },
-    {
-      "title": "6. Data Retention",
-      "text": "Your data is kept for the duration of your subscription and up to 3 years after cancellation, in accordance with legal and accounting obligations."
-    },
-    {
-      "title": "7. Cookies",
-      "text": "We use essential cookies for website operation and analytics cookies (with your consent) to improve our services."
-    },
-    {
-      "title": "8. DPO Contact",
-      "text": "For any question regarding data protection:",
-      "note": "Email: dpo@cryptoluckmining.com"
-    }
-  ]
-},
-
-"contact": {
-  "title": "Contact",
-  "email": "Email",
-  "schedule": "Schedule",
-
-  "customer_service": {
-    "title": "Customer Service",
-    "schedule": "Monday - Friday, 9 AM - 6 PM"
   },
-
-  "tech_support": {
-    "title": "Technical Support",
-    "delay": "Response within 24 business hours"
-  },
-
-  "sales": {
-    "title": "Sales Inquiries"
-  },
-
-  "dpo": {
-    "title": "Data Protection Officer",
-    "email_label": "DPO Email"
-  },
-
-  "address": {
-    "title": "Postal Address",
-    "country": "Belgium"
-  },
-
-  "note": "💬 Our team is here to answer any questions about Bitcoin Lottery Mining, your subscription, or any other topic."
-},
-
-"legal": {
-  "title": "Legal Notice",
-
-  "address_label": "Head Office",
-  "email_label": "Email",
-
-  "editor": {
-    "title": "Website Publisher"
-  },
-
-  "director": {
-    "title": "Publication Director"
-  },
-
-  "hosting": {
-    "title": "Hosting",
-    "host": "Host",
-    "address": "Address",
-    "website": "Website"
-  },
-
-  "intellectual": {
-    "title": "Intellectual Property",
-    "text": "All content on this website (texts, images, logos, graphics, etc.) is protected by copyright and belongs to CryptoLuck Mining or its partners. Any reproduction, even partial, is strictly prohibited without prior written authorization."
-  },
-
-  "liability": {
-    "title": "Liability Limitation",
-    "text": "CryptoLuck Mining cannot be held responsible for direct or indirect damages resulting from the use of this website. Cryptocurrency mining involves financial risks and profits are never guaranteed."
-  },
-
-  "cookies": {
-    "title": "Cookies",
-    "text": "This site uses cookies to enhance your browsing experience. You can manage your preferences via the banner displayed on your first visit."
-  }
-},
 
   "subscription": {
-    "title": "Premium Subscription",
-    "activation": "Instant activation after confirmation",
-    "price": "/month VAT included",
-    "features": [
-      "Unlimited participation in all draws",
-      "144 chances per day (1 draw every 10 min)",
-      "Real-time dashboard",
-      "Instant notifications",
-      "Priority technical support",
-      "Detailed participation statistics"
-    ],
-    "payment": "Bitcoin Payment",
-    "amount_label": "Amount to send:",
-    "loading": "Loading...",
-    "updated": "Price updated in real time",
-    "scan": "Scan with your Bitcoin wallet",
-    "address_label": "Payment address:",
-    "copy": "Copy Bitcoin address",
-    "secure": "Secure payment via Bitcoin blockchain",
-    "confirmation": "Automatic activation after 3 confirmations (~30 minutes)",
-    "button": "SUBSCRIBE NOW"
+  "title": "Premium Subscription",
+  "activation": "Instant activation after confirmation",
+  "price": "/month VAT included",
+  "features": [
+    "Unlimited participation in all draws",
+    "144 chances per day (1 draw every 10 min)",
+    "Real-time dashboard",
+    "Instant notifications",
+    "Priority technical support",
+    "Detailed participation statistics"
+  ],
+  "payment": "Bitcoin Payment",
+  "amount_label": "Amount to send:",
+  "loading": "Loading...",
+  "updated": "Price updated in real time",
+  "scan": "Scan with your Bitcoin wallet",
+  "address_label": "Payment address:",
+  "copy": "Copy Bitcoin address",
+  "secure": "Secure payment via Bitcoin blockchain",
+  "confirmation": "Automatic activation after 3 confirmations (~30 minutes)",
+  "button": "SUBSCRIBE NOW",
+  "active_miners": "active miners right now",
+  "next_block": "Next block",
+  "active_miners_short": "Active miners",
+  "draws_per_day": "Draws/day",
+  "recent_activity": "Recent activity",
+  "just_subscribed": "just subscribed",
+  "minutes_ago": "ago",
+  "min": "min",
+  "guarantee": "Satisfied or refunded within 14 days",
+  "guarantee_desc": "According to European law",
+  "steps_title": "Registration steps:",
+  "step1": "Scan the QR code with your Bitcoin wallet",
+  "step2": "Send the exact amount in BTC",
+  "step3": "Wait for 3 confirmations (~30 min)",
+  "step4": "Your account is activated automatically!",
+  "urgency": "Limited offer: Join the first",
+  "urgency_end": "miners!",
+  "testimonials_title": "What our miners say",
+  "testimonial1": "Simple and transparent interface. Love seeing the miner in real-time!",
+  "testimonial1_author": "Mike, USA",
+  "testimonial2": "Great concept! Love the lottery approach to Bitcoin mining.",
+  "testimonial2_author": "Sarah, UK",
+  "testimonial3": "Interesting concept! Exciting every day.",
+  "testimonial3_author": "Yuki, Japan",
+  "copied": "✓ Address copied!",
+  "error_copy": "Failed to copy",
+  "payment_instructions": "Payment instructions:",
+  "wallet_address": "Bitcoin wallet address",
+  "amount_btc": "Exact amount to send",
+  "confirmations_needed": "Confirmations needed",
+  "estimated_time": "Estimated time",
+  "important_note": "Important:",
+  "exact_amount_warning": "Send the EXACT amount in BTC. Any other amount will not activate your subscription.",
+  "network_fee_info": "Include network fees in your transaction",
+  "support_contact": "Need help? Contact support:",
+  "email_support": "support@cryptoluck-mining.com"
+},
+  "blog": {
+    "title": "CryptoLuck Blog",
+    "subtitle": "News and guides on Bitcoin Mining",
+    "backToArticles": "Back to articles",
+    "readArticle": "Read article",
+    "moreArticlesSoon": "More articles coming soon...",
+    "comingSoonDesc": "Check back soon for new guides!",
+    "comingSoon": "Coming soon",
+    "readTime": "min read",
+    "articles": {
+      "bitcoin-mining-2025": {
+        "id": "bitcoin-mining-2025",
+        "title": "Bitcoin Mining in 2025: Complete Guide",
+        "category": "Guide",
+        "date": "November 15, 2025",
+        "publishDateISO": "2025-11-15",
+        "readTime": "8",
+        "excerpt": "Discover how Bitcoin mining has evolved in 2025 and what you need to know to get started.",
+        "content": {
+          "intro": "Bitcoin mining in 2025 has undergone a major transformation. With the latest halving completed in April 2024, the mining landscape has evolved significantly, offering new opportunities while posing unique challenges.",
+          
+          "section1": {
+            "title": "What is Bitcoin Mining?",
+            "text": "Bitcoin mining is the process by which new bitcoins are created and transactions are verified on the blockchain. Miners use specialized computing power to solve complex mathematical problems. When a miner successfully solves a problem, they add a new block to the blockchain and receive a reward in bitcoin."
+          },
+          
+          "section2": {
+            "title": "The 2024 Halving: A Turning Point",
+            "text": "In April 2024, Bitcoin underwent its fourth halving, reducing the block reward from 6.25 BTC to 3.125 BTC. This event, which occurs approximately every four years, directly impacts mining profitability. Miners must now be even more efficient to remain profitable with a reduced reward."
+          },
+          
+          "section3": {
+            "title": "Mining Equipment in 2025",
+            "text": "Modern ASIC miners have reached unprecedented levels of efficiency. The latest generation machines offer hash rates exceeding 140 TH/s while consuming less energy per terahash than ever before. However, the initial investment remains substantial, often ranging from $3,000 to $15,000 per unit."
+          },
+          
+          "section4": {
+            "title": "Energy Costs: The Critical Factor",
+            "text": "In 2025, energy costs remain the primary expense for miners. With increasing network difficulty and reduced rewards, access to cheap electricity (ideally below $0.06 per kWh) has become essential for profitability. Many mining operations have relocated to regions with abundant renewable energy."
+          },
+          
+          "section5": {
+            "title": "Mining Pools vs Solo Mining",
+            "text": "Solo mining has become virtually impossible for individual miners due to massive network difficulty. Mining pools, where miners combine their computing power and share rewards proportionally, have become the standard. These pools offer more consistent, albeit smaller, payouts."
+          },
+          
+          "section6": {
+            "title": "The Rise of Cloud Mining",
+            "text": "Cloud mining services have gained popularity, allowing individuals to participate in Bitcoin mining without purchasing or maintaining expensive hardware. However, it's crucial to thoroughly research providers as this sector has seen numerous scams."
+          },
+          
+          "section7": {
+            "title": "Network Difficulty and Competition",
+            "text": "Bitcoin's network difficulty has reached all-time highs in 2025, with the global hash rate exceeding 600 EH/s. This increased competition means that finding a block has become exponentially more challenging, requiring significant computational resources."
+          },
+          
+          "section8": {
+            "title": "Environmental Considerations",
+            "text": "The environmental impact of Bitcoin mining remains a hot topic. Many mining operations have transitioned to renewable energy sources, with over 50% of global mining now powered by sustainable energy. This shift is driven by both environmental concerns and economic advantages."
+          },
+          
+          "section9": {
+            "title": "Regulations and Compliance",
+            "text": "In 2025, Bitcoin mining faces increased regulatory scrutiny worldwide. Several countries have implemented specific regulations for mining operations, including energy consumption caps, taxation frameworks, and environmental compliance requirements. Staying informed about local regulations is essential."
+          },
+          
+          "section10": {
+            "title": "Is Bitcoin Mining Still Profitable?",
+            "text": "Profitability depends on multiple factors: electricity costs, hardware efficiency, Bitcoin's market price, and network difficulty. While large-scale operations with access to cheap energy can still profit, small individual miners face significant challenges. Careful calculation of all costs is essential before investing."
+          },
+          
+          "conclusion": {
+            "title": "Conclusion",
+            "text": "Bitcoin mining in 2025 requires significant investment, technical expertise, and access to affordable energy. While the barriers to entry have increased, mining remains fundamental to Bitcoin's security and decentralization. For those considering entering this space, thorough research and realistic expectations are crucial."
+          }
+        }
+      },
+      "bitcoin-lottery-esp32-guide": {
+        "id": "bitcoin-lottery-esp32-guide",
+        "title": "Set up an ESP32 for Bitcoin Lottery Mining (2025)",
+        "category": "Tutorial",
+        "date": "November 21, 2025",
+        "publishDateISO": "2025-11-21",
+        "readTime": "6",
+        "excerpt": "Learn how to use an ESP32 to experiment with Bitcoin Lottery Mining: a simple and fun educational project.",
+        "content": {
+          "intro": "Bitcoin Lottery Mining is a playful, educational way to learn how Bitcoin mining works. With a simple ESP32 microcontroller you can create a tiny \"lottery-style\" miner: the chances of finding a block are almost zero, but the process teaches you proof-of-work and the blockchain. This guide walks you through installing, configuring, and running your ESP32 to join the experiment.",
+          "section1": { "title": "1. Purpose of this tutorial", "text": "The goal is to guide you to turn an ESP32 into an educational mini Bitcoin miner. You'll learn how hashing works, how mining tries to solve proof-of-work, and why an ESP32 is billions of times less powerful than an ASIC. This tutorial aims to teach the mechanics, not to make you rich." },
+          "section2": { "title": "2. What is Bitcoin Lottery Mining?", "text": "Bitcoin Lottery Mining consists of mining with extremely low power, hoping—like in a lottery—to hit a valid hash. An ESP32 computes a few thousand hashes per second while modern ASICs reach hundreds of TH/s. The probabilities are astronomically small, but it's perfect for learning without expensive hardware." },
+          "section3": { "title": "3. Quick ESP32 overview", "text": "The ESP32 is an affordable Wi-Fi/Bluetooth microcontroller able to run C++ or MicroPython. It's great for DIY projects. Example module you can use:\n\n<img src=\"https://cdn.sparkfun.com/assets/parts/1/3/0/2/4/17381-SparkFun_Thing_Plus_ESP32_WROOM-01.jpg\" alt=\"ESP32 photo\" class=\"rounded-lg border border-gray-600 mt-4 w-full max-w-sm mx-auto\" />" },
+          "section4": { "title": "4. Required hardware", "text": "• 1× ESP32 development board\n• 1× USB cable\n• A computer (Windows/macOS/Linux)\n• (Optional) small OLED for stats\n• (Optional) 3D-printed case" },
+          "section5": { "title": "5. Development setup", "text": "Install your development environment:\n1. Download Arduino IDE or PlatformIO.\n2. Add ESP32 board support.\n3. Verify the ESP32 is detected on the serial port.\n\nYou're then ready to run miner code." },
+          "section6": { "title": "6. Install a lottery-mining firmware", "text": "There are open-source projects that perform SHA-256 hashing on ESP32 (e.g., MicroMiner or ESP32 Bitcoin Miner). Clone the repo and open the main sketch in Arduino IDE. The firmware will continuously attempt hashes, simulating mining at very low power." },
+          "section7": { "title": "7. Configure the miner", "text": "In config you can typically set:\n• local difficulty (for faster visible results),\n• CPU frequency,\n• display of hashes-per-second.\n\nThese settings don't change your real chance to find a block but help visualize the internal behavior." },
+          "section8": { "title": "8. Upload the code", "text": "Plug the ESP32, select the correct serial port and click Upload in Arduino IDE. After a few seconds the board restarts and begins computing SHA-256 hashes. Use the serial monitor to follow attempts live." },
+          "section9": { "title": "9. What actually happens", "text": "Your ESP32 generates random data blocks, hashes them with SHA-256, and compares results to a target. It's the same process miners use, but at a vastly smaller scale. The goal is understanding: each hash is a lottery ticket." },
+          "section10": { "title": "10. Your chances", "text": "With an ESP32, your chances are practically zero: a modern ASIC performs about a trillion times more calculations. That extreme unlikeliness is exactly what makes this project educational: you participate in the same process at a tiny scale without expensive investment." },
+          "conclusion": { "title": "Conclusion", "text": "You now have an educational mini Bitcoin miner to explore proof-of-work and the Bitcoin internals. While an ESP32 won't find a block, it teaches the mining fundamentals in a simple, fun way — a great intro to Bitcoin." }
+        }
+      }
+    }
   }
 }
+
 
 
