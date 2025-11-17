@@ -13,23 +13,67 @@ export default function SubscriptionCard() {
   const [recentActivity, setRecentActivity] = useState([]);
   const [copied, setCopied] = useState(false);
 
-  // Simuler des activités récentes
+  // Calculer le nombre de mineurs actifs (augmente de 2 par jour)
   useEffect(() => {
-    const activities = [
-      { name: "Alex M.", action: t("subscription.just_subscribed"), time: `3 ${t("subscription.min")}`, flag: "🇫🇷" },
-      { name: "Sarah K.", action: t("subscription.just_subscribed"), time: `5 ${t("subscription.min")}`, flag: "🇬🇧" },
-      { name: "田中様", action: t("subscription.just_subscribed"), time: `12 ${t("subscription.min")}`, flag: "🇯🇵" },
-    ];
-    setRecentActivity(activities);
+    const LAUNCH_DATE = new Date('2025-11-15T00:00:00'); // Date de lancement : 15 novembre 2025
+    const INITIAL_MINERS = 87;
+    const DAILY_INCREASE = 2;
 
-    const interval = setInterval(() => {
-      if (Math.random() > 0.7) {
-        setActiveSubscribers(prev => prev + 1);
-      }
-    }, 45000);
+    const calculateMiners = () => {
+      const now = new Date();
+      const daysSinceLaunch = Math.floor((now - LAUNCH_DATE) / (1000 * 60 * 60 * 24));
+      const currentMiners = INITIAL_MINERS + (daysSinceLaunch * DAILY_INCREASE);
+      setActiveSubscribers(currentMiners);
+    };
 
+    calculateMiners();
+    const interval = setInterval(calculateMiners, 1000 * 60 * 60); // Mise à jour toutes les heures
     return () => clearInterval(interval);
-  }, [i18n.language, t]);
+  }, []);
+
+  // Simuler des activités récentes avec rotation quotidienne
+useEffect(() => {
+  const namePool = [
+    { names: ["Marc L.", "Sophie D.", "Thomas B.", "Julie M.", "Nicolas P.", "Emma R.", "Camille T.", "Lucas M."], flag: "🇫🇷" },
+    { names: ["Chris M.", "Sarah K.", "James W.", "Emily R.", "David L.", "Michael T.", "Jessica P.", "Anna G."], flag: "🇬🇧" },
+    { names: ["田中様", "佐藤様", "鈴木様", "高橋様", "伊藤様", "山本様", "中村様", "大谷様"], flag: "🇯🇵" },
+  ];
+
+  // Génère toujours les mêmes noms pour un jour donné
+  const today = new Date();
+  const seed = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000);
+
+  const random = (s) => {
+    const x = Math.sin(s) * 10000;
+    return x - Math.floor(x);
+  };
+
+  const pickName = (list, indexOffset) => {
+    const idx = Math.floor(random(seed + indexOffset) * list.length);
+    return list[idx];
+  };
+
+  const activities = [
+    {
+      name: pickName(namePool[0].names, 10),
+      flag: namePool[0].flag,
+      action: t("subscription.just_subscribed"),
+    },
+    {
+      name: pickName(namePool[1].names, 20),
+      flag: namePool[1].flag,
+      action: t("subscription.just_subscribed"),
+    },
+    {
+      name: pickName(namePool[2].names, 30),
+      flag: namePool[2].flag,
+      action: t("subscription.just_subscribed"),
+    },
+  ];
+
+  setRecentActivity(activities);
+}, [i18n.language]); // IMPORTANT : t retiré pour éviter la boucle infinie
+
 
   const fetchBitcoinPrice = async () => {
     try {
@@ -145,11 +189,10 @@ export default function SubscriptionCard() {
                 </div>
                 <div className="space-y-2">
                   {recentActivity.map((activity, i) => (
-                    <div key={i} className="flex items-center justify-between text-xs">
+                    <div key={i} className="flex items-center text-xs">
                       <span className="text-gray-400">
                         {activity.flag} <span className="font-semibold text-white">{activity.name}</span> {activity.action}
                       </span>
-                      <span className="text-gray-500">{activity.time} {t("subscription.minutes_ago")}</span>
                     </div>
                   ))}
                 </div>

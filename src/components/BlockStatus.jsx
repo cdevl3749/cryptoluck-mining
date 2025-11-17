@@ -3,8 +3,10 @@ import { useTranslation } from 'react-i18next'
 
 export default function BlockStatus() {
   const [countdown, setCountdown] = useState('--:--')
+  const [activeParticipants, setActiveParticipants] = useState(0)
   const { t } = useTranslation()
 
+  // Countdown timer
   useEffect(() => {
     const updateCountdown = () => {
       const now = new Date()
@@ -16,6 +18,24 @@ export default function BlockStatus() {
     updateCountdown()
     const countInterval = setInterval(updateCountdown, 1000)
     return () => clearInterval(countInterval)
+  }, [])
+
+  // Calculer le nombre de mineurs actifs (augmente de 2 par jour)
+  useEffect(() => {
+    const LAUNCH_DATE = new Date('2025-11-15T00:00:00') // Date de lancement : 15 novembre 2025
+    const INITIAL_MINERS = 87
+    const DAILY_INCREASE = 2
+
+    const calculateMiners = () => {
+      const now = new Date()
+      const daysSinceLaunch = Math.floor((now - LAUNCH_DATE) / (1000 * 60 * 60 * 24))
+      const currentMiners = INITIAL_MINERS + (daysSinceLaunch * DAILY_INCREASE)
+      setActiveParticipants(currentMiners)
+    }
+
+    calculateMiners()
+    const interval = setInterval(calculateMiners, 1000 * 60 * 60) // Mise à jour toutes les heures
+    return () => clearInterval(interval)
   }, [])
 
   return (
@@ -37,7 +57,7 @@ export default function BlockStatus() {
                 <strong className="text-white">{t('blockStatus.lastBlock')}</strong> {t('blockStatus.noBlock')}
               </div>
               <div>
-                <strong className="text-white">{t('blockStatus.activeParticipants')}</strong> 87
+                <strong className="text-white">{t('blockStatus.activeParticipants')}</strong> {activeParticipants}
               </div>
               <div>
                 <strong className="text-white">{t('blockStatus.nextDraw')}</strong> {countdown}
