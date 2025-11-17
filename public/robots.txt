@@ -1,8 +1,23 @@
 # Robots.txt pour CryptoLuck Mining
-# Dernière mise à jour: 2025-01-10
-
 User-agent: *
+Allow: /
+
+# Autoriser les ressources statiques
+Allow: /assets/
+Allow: /src/
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Autoriser les APIs externes nécessaires
+User-agent: Googlebot
 Allow: /
 
 # Sitemap
 Sitemap: https://cryptoluck-mining.netlify.app/sitemap.xml
+
+# Crawl-delay (optionnel)
+Crawl-delay: 1
