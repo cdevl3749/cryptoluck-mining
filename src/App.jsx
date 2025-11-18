@@ -131,7 +131,9 @@ function LanguageSelector() {
 function App() {
   const [activeModal, setActiveModal] = useState(null)
   const { t } = useTranslation()
-  const subscriptionRef = useRef(null)
+  const topSubscriptionRef = useRef(null)
+  const donationRef = useRef(null)
+  const timelineRef = useRef(null)
 
   const openModal = (modalName) => {
     setActiveModal(modalName)
@@ -144,9 +146,23 @@ function App() {
   }
 
   const scrollToSubscription = () => {
-    subscriptionRef.current?.scrollIntoView({ 
+    topSubscriptionRef.current?.scrollIntoView({ 
       behavior: 'smooth',
       block: 'center'
+    })
+  }
+
+  const scrollToDonation = () => {
+    donationRef.current?.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'center'
+    })
+  }
+
+  const scrollToTimeline = () => {
+    timelineRef.current?.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
     })
   }
 
@@ -157,7 +173,7 @@ function App() {
       <HreflangLinks />
       
       <CookieBanner />
-      <Header openModal={openModal} />  {/* 🔧 MODIFIÉ ICI */}
+      <Header openModal={openModal} />
       
       {/* Sélecteur de langue - Positionné en haut à droite */}
       <div className="absolute top-4 right-4 z-50">
@@ -165,13 +181,49 @@ function App() {
       </div>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-16">
-        <h1 className="text-3xl font-bold mb-4">{t('home.welcome')}</h1>
-        <button 
-          onClick={scrollToSubscription}
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
-        >
-          {t('home.subscribe')}
-        </button>
+        {/* Hero Section avec 3 boutons */}
+        <div className="mb-12">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-white">
+            {t('home.welcome')}
+          </h1>
+          
+          {/* 3 Boutons de navigation */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-4xl mx-auto">
+            
+            {/* Bouton 1 : S'abonner Maintenant */}
+            <button 
+              onClick={scrollToSubscription}
+              className="group relative w-full sm:w-auto px-6 py-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 font-bold rounded-xl shadow-[0_0_20px_rgba(255,215,0,0.5)] hover:shadow-[0_0_30px_rgba(255,215,0,0.8)] hover:scale-105 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-orange-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <span className="relative flex items-center justify-center gap-2 text-base sm:text-lg">
+                💎 {t('home.subscribe')}
+              </span>
+            </button>
+
+            {/* Bouton 2 : Projet Communautaire */}
+            <button 
+              onClick={scrollToDonation}
+              className="group relative w-full sm:w-auto px-6 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold rounded-xl shadow-[0_0_20px_rgba(168,85,247,0.5)] hover:shadow-[0_0_30px_rgba(168,85,247,0.8)] hover:scale-105 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <span className="relative flex items-center justify-center gap-2 text-base sm:text-lg">
+                🚀 {t('home.community_project')}
+              </span>
+            </button>
+
+            {/* Bouton 3 : Comment Participer */}
+            <button 
+              onClick={scrollToTimeline}
+              className="group relative w-full sm:w-auto px-6 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_30px_rgba(6,182,212,0.8)] hover:scale-105 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <span className="relative flex items-center justify-center gap-2 text-base sm:text-lg">
+                📋 {t('home.how_to_participate')}
+              </span>
+            </button>
+          </div>
+        </div>
 
         {/* Contenu existant */}
         <JackpotDisplay />
@@ -179,10 +231,15 @@ function App() {
         <ExplanationBox />
         <LotteryBanner />
         <MiningIcons />
-        <Timeline />
-        <div ref={subscriptionRef}>
-          <SubscriptionCard />
+        
+        <div ref={timelineRef}>
+          <Timeline />
         </div>
+        
+        <div ref={topSubscriptionRef}>
+          <SubscriptionCard donationRef={donationRef} />
+        </div>
+        
         <BlockStatus />
       </main>
 
@@ -193,7 +250,7 @@ function App() {
       {activeModal === 'conditions' && <Conditions closeModal={closeModal} />}
       {activeModal === 'confidentialite' && <Confidentialite closeModal={closeModal} />}
       {activeModal === 'contact' && <Contact closeModal={closeModal} />}
-      {activeModal === 'blog' && <BlogModal closeModal={closeModal} />}  {/* 🔧 AJOUTÉ ICI */}
+      {activeModal === 'blog' && <BlogModal closeModal={closeModal} />}
     </div>
   )
 }

@@ -1,7 +1,9 @@
 {
   "home": {
     "welcome": "Welcome to CryptoLuck",
-    "subscribe": "Subscribe now"
+    "subscribe": "Subscribe Now",
+    "community_project": "Community Project",
+    "how_to_participate": "How to Participate"
   },
   "header": {
     "title": "CRYPTOLUCK MINING",
@@ -85,6 +87,61 @@
   "activeParticipants": "Active miners:",
   "nextDraw": "Next draw in:"
 },
+
+"donation": {
+    "title": "Community Project: 4 Antminer S19 XP",
+    "subtitle": "Join us in buying professional machines • 560 TH/s • Shared jackpot!",
+    "progress": "Progress",
+    "hashrate": "Total hashrate",
+    "jackpot": "Potential jackpot",
+    "remaining": "Remaining",
+    "donate_button": "Donate",
+    "copied": "Copied!",
+    "details": "Details",
+    "guarantee_info": "Smart contract • Auto refund if goal not reached • Proportional share of winnings"
+  }
+  ,
+
+  "donation": {
+    "title": "Community Project: 4 Antminer S19 XP",
+    "subtitle": "Join us in buying professional machines • 560 TH/s • Shared jackpot!",
+    "progress": "Progress",
+    "hashrate": "Total hashrate",
+    "jackpot": "Potential jackpot",
+    "remaining": "Remaining",
+    "donate_button": "Donate",
+    "details": "Details",
+    "copied": "Copied!",
+    "guarantee_info": "Smart contract • Auto refund if goal not reached • Proportional share of winnings",
+    "modal_title": "Make a Donation",
+    "modal_subtitle": "Scan the QR code or copy the address",
+    "address_label": "Bitcoin Address",
+    "copy_address": "Copy address",
+    "close": "Close",
+    "any_amount": "Any amount is appreciated",
+    "details_title": "Project Details",
+    "details_subtitle": "Everything you need to know about this campaign",
+    "what_is_project": "What is the project?",
+    "project_desc": "We're launching a community campaign to buy 4 professional Antminer S19 XP machines. These machines will significantly increase our chances of mining a Bitcoin block. If we win, all earnings will be distributed proportionally to donors via smart contract.",
+    "the_machines": "The Machines",
+    "machine_spec1": "4x Bitmain Antminer S19 XP - 140 TH/s each",
+    "machine_spec2": "560 TH/s total computing power",
+    "machine_spec3": "Installation in an Iceland datacenter with green electricity",
+    "how_it_works": "How does it work?",
+    "step_1": "You make a donation in Bitcoin to the project address",
+    "step_2": "Once €7,900 is reached, we buy the 4 machines",
+    "step_3": "Machines mine 24/7 in lottery mining mode",
+    "step_4_details": "If we mine a block (3.125 BTC), earnings are automatically distributed to all donors proportionally to their contribution",
+    "guarantees": "Guarantees",
+    "guarantee_1": "Verified and open-source smart contract on GitHub",
+    "guarantee_2": "Automatic refund if goal not reached within 60 days",
+    "guarantee_3": "24/7 webcam to monitor machines in real-time",
+    "guarantee_4": "Automatic earnings distribution via blockchain",
+    "choose_amount": "Choose an amount:",
+    "custom_amount": "Custom amount",
+    "amount_to_send": "Amount to send:",
+    "scan_wallet": "Scan with your Bitcoin wallet"
+  },
 
   "jackpot": {
     "title": "🏆 NEXT BLOCK VALUE 🏆",

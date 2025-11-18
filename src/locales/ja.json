@@ -1,7 +1,9 @@
 {
   "home": {
     "welcome": "クリプトラックへようこそ",
-    "subscribe": "今すぐ登録する"
+    "subscribe": "今すぐ登録",
+    "community_project": "コミュニティプロジェクト",
+    "how_to_participate": "参加方法"
   },
   "header": {
     "title": "クリプトラック・マイニング",
@@ -86,6 +88,60 @@
   "activeParticipants": "アクティブマイナー：",
   "nextDraw": "次の抽選まで："
 },
+
+"donation": {
+    "title": "コミュニティプロジェクト：Antminer S19 XP 4台",
+    "subtitle": "プロ用マシンの購入に参加 • 560 TH/s • ジャックポット共有！",
+    "progress": "進捗状況",
+    "hashrate": "合計ハッシュレート",
+    "jackpot": "潜在的ジャックポット",
+    "remaining": "残り",
+    "donate_button": "寄付する",
+    "copied": "コピーしました！",
+    "details": "詳細",
+    "guarantee_info": "スマートコントラクト • 目標未達成時は自動返金 • 賞金の比例配分"
+  },
+
+  "donation": {
+    "title": "コミュニティプロジェクト：Antminer S19 XP 4台",
+    "subtitle": "プロ用マシンの購入に参加 • 560 TH/s • ジャックポット共有！",
+    "progress": "進捗状況",
+    "hashrate": "合計ハッシュレート",
+    "jackpot": "潜在的ジャックポット",
+    "remaining": "残り",
+    "donate_button": "寄付する",
+    "details": "詳細",
+    "copied": "コピーしました！",
+    "guarantee_info": "スマートコントラクト • 目標未達成時は自動返金 • 賞金の比例配分",
+    "modal_title": "寄付する",
+    "modal_subtitle": "QRコードをスキャンまたはアドレスをコピー",
+    "address_label": "ビットコインアドレス",
+    "copy_address": "アドレスをコピー",
+    "close": "閉じる",
+    "any_amount": "どんな金額でも歓迎です",
+    "details_title": "プロジェクト詳細",
+    "details_subtitle": "このキャンペーンについて知っておくべきすべて",
+    "what_is_project": "プロジェクトとは？",
+    "project_desc": "4台のプロ仕様Antminer S19 XPマシンを購入するコミュニティキャンペーンを開始します。これらのマシンはビットコインブロックのマイニング成功率を大幅に向上させます。当選した場合、すべての収益はスマートコントラクトを介して寄付者に比例配分されます。",
+    "the_machines": "マシン",
+    "machine_spec1": "4x Bitmain Antminer S19 XP - 各140 TH/s",
+    "machine_spec2": "合計560 TH/sの計算能力",
+    "machine_spec3": "アイスランドのデータセンターでグリーン電力により設置",
+    "how_it_works": "仕組みは？",
+    "step_1": "プロジェクトアドレスにビットコインで寄付します",
+    "step_2": "7,900€に達したら、4台のマシンを購入します",
+    "step_3": "マシンは24時間365日ロトマイニングモードで稼働",
+    "step_4_details": "ブロックをマイニング（3.125 BTC）した場合、収益は自動的にすべての寄付者に貢献度に応じて配分されます",
+    "guarantees": "保証",
+    "guarantee_1": "GitHubで検証済みのオープンソーススマートコントラクト",
+    "guarantee_2": "60日以内に目標未達成の場合は自動返金",
+    "guarantee_3": "リアルタイムでマシンを監視する24時間365日ウェブカメラ",
+    "guarantee_4": "ブロックチェーン経由の自動収益配分",
+    "choose_amount": "金額を選択：",
+    "custom_amount": "カスタム金額",
+    "amount_to_send": "送金額：",
+    "scan_wallet": "Bitcoinウォレットでスキャン"
+  },
 
   "jackpot": {
     "title": "🏆 次のブロックの価値 🏆",

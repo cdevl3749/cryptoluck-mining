@@ -1,7 +1,9 @@
 {
   "home": {
     "welcome": "Bienvenue sur CryptoLuck",
-    "subscribe": "S'abonner maintenant"
+    "subscribe": "S'abonner maintenant",
+    "community_project": "Projet Communautaire",
+    "how_to_participate": "Comment Participer"
   },
   "header": {
     "title": "CRYPTOLUCK MINING",
@@ -86,6 +88,47 @@
   "activeParticipants": "Mineurs actifs :",
   "nextDraw": "Prochain tirage dans :"
 },
+
+"donation": {
+    "title": "Projet Communautaire : 4 Antminer S19 XP",
+    "subtitle": "Participez à l'achat de machines professionnelles • 560 TH/s • Jackpot partagé !",
+    "progress": "Progression",
+    "hashrate": "Puissance totale",
+    "jackpot": "Jackpot potentiel",
+    "remaining": "Restant",
+    "donate_button": "Faire un don",
+    "details": "Détails",
+    "copied": "Copié !",
+    "guarantee_info": "Smart contract • Remboursement auto si objectif non atteint • Part proportionnelle des gains",
+    "modal_title": "Faire un don",
+    "modal_subtitle": "Scannez le QR code ou copiez l'adresse",
+    "address_label": "Adresse Bitcoin",
+    "copy_address": "Copier l'adresse",
+    "close": "Fermer",
+    "any_amount": "Tout montant est apprécié",
+    "details_title": "Détails du Projet",
+    "details_subtitle": "Tout ce que vous devez savoir sur cette campagne",
+    "what_is_project": "Quel est le projet ?",
+    "project_desc": "Nous lançons une campagne communautaire pour acheter 4 machines Antminer S19 XP professionnelles. Ces machines augmenteront considérablement nos chances de miner un bloc Bitcoin. Si nous gagnons, tous les gains seront distribués proportionnellement aux donateurs via smart contract.",
+    "the_machines": "Les Machines",
+    "machine_spec1": "4x Bitmain Antminer S19 XP - 140 TH/s chacun",
+    "machine_spec2": "560 TH/s de puissance de calcul totale",
+    "machine_spec3": "Installation dans un datacenter en Islande avec électricité verte",
+    "how_it_works": "Comment ça marche ?",
+    "step_1": "Vous faites un don en Bitcoin à l'adresse du projet",
+    "step_2": "Une fois 7900€ atteints, nous achetons les 4 machines",
+    "step_3": "Les machines minent 24/7 en lottery mining",
+    "step_4_details": "Si on mine un bloc (3.125 BTC), les gains sont distribués automatiquement à tous les donateurs proportionnellement à leur contribution",
+    "guarantees": "Garanties",
+    "guarantee_1": "Smart contract vérifié et open-source sur GitHub",
+    "guarantee_2": "Remboursement automatique si objectif non atteint en 60 jours",
+    "guarantee_3": "Webcam 24/7 pour surveiller les machines en temps réel",
+    "guarantee_4": "Distribution automatique des gains via blockchain",
+    "choose_amount": "Choisir un montant :",
+    "custom_amount": "Montant personnalisé",
+    "amount_to_send": "Montant à envoyer :",
+    "scan_wallet": "Scannez avec votre wallet Bitcoin"
+  },
 
 "jackpot": {
   "title": "🏆 VALEUR DU PROCHAIN BLOC 🏆",

@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import DonationSection from './DonationSection';
 
-export default function SubscriptionCard() {
+const SubscriptionCard = ({ donationRef }) => {
   const { t, i18n } = useTranslation();
 
   const BITCOIN_ADDRESS = "3FULxTDJkQB2jrX8cNzJBAoFt43LUbd4PY";
@@ -15,7 +16,7 @@ export default function SubscriptionCard() {
 
   // Calculer le nombre de mineurs actifs (augmente de 2 par jour)
   useEffect(() => {
-    const LAUNCH_DATE = new Date('2025-11-15T00:00:00'); // Date de lancement : 15 novembre 2025
+    const LAUNCH_DATE = new Date('2025-11-15T00:00:00');
     const INITIAL_MINERS = 87;
     const DAILY_INCREASE = 2;
 
@@ -27,53 +28,51 @@ export default function SubscriptionCard() {
     };
 
     calculateMiners();
-    const interval = setInterval(calculateMiners, 1000 * 60 * 60); // Mise à jour toutes les heures
+    const interval = setInterval(calculateMiners, 1000 * 60 * 60);
     return () => clearInterval(interval);
   }, []);
 
   // Simuler des activités récentes avec rotation quotidienne
-useEffect(() => {
-  const namePool = [
-    { names: ["Marc L.", "Sophie D.", "Thomas B.", "Julie M.", "Nicolas P.", "Emma R.", "Camille T.", "Lucas M."], flag: "🇫🇷" },
-    { names: ["Chris M.", "Sarah K.", "James W.", "Emily R.", "David L.", "Michael T.", "Jessica P.", "Anna G."], flag: "🇬🇧" },
-    { names: ["田中様", "佐藤様", "鈴木様", "高橋様", "伊藤様", "山本様", "中村様", "大谷様"], flag: "🇯🇵" },
-  ];
+  useEffect(() => {
+    const namePool = [
+      { names: ["Marc L.", "Sophie D.", "Thomas B.", "Julie M.", "Nicolas P.", "Emma R.", "Camille T.", "Lucas M."], flag: "🇫🇷" },
+      { names: ["Chris M.", "Sarah K.", "James W.", "Emily R.", "David L.", "Michael T.", "Jessica P.", "Anna G."], flag: "🇬🇧" },
+      { names: ["田中様", "佐藤様", "鈴木様", "高橋様", "伊藤様", "山本様", "中村様", "大谷様"], flag: "🇯🇵" },
+    ];
 
-  // Génère toujours les mêmes noms pour un jour donné
-  const today = new Date();
-  const seed = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000);
+    const today = new Date();
+    const seed = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000);
 
-  const random = (s) => {
-    const x = Math.sin(s) * 10000;
-    return x - Math.floor(x);
-  };
+    const random = (s) => {
+      const x = Math.sin(s) * 10000;
+      return x - Math.floor(x);
+    };
 
-  const pickName = (list, indexOffset) => {
-    const idx = Math.floor(random(seed + indexOffset) * list.length);
-    return list[idx];
-  };
+    const pickName = (list, indexOffset) => {
+      const idx = Math.floor(random(seed + indexOffset) * list.length);
+      return list[idx];
+    };
 
-  const activities = [
-    {
-      name: pickName(namePool[0].names, 10),
-      flag: namePool[0].flag,
-      action: t("subscription.just_subscribed"),
-    },
-    {
-      name: pickName(namePool[1].names, 20),
-      flag: namePool[1].flag,
-      action: t("subscription.just_subscribed"),
-    },
-    {
-      name: pickName(namePool[2].names, 30),
-      flag: namePool[2].flag,
-      action: t("subscription.just_subscribed"),
-    },
-  ];
+    const activities = [
+      {
+        name: pickName(namePool[0].names, 10),
+        flag: namePool[0].flag,
+        action: t("subscription.just_subscribed"),
+      },
+      {
+        name: pickName(namePool[1].names, 20),
+        flag: namePool[1].flag,
+        action: t("subscription.just_subscribed"),
+      },
+      {
+        name: pickName(namePool[2].names, 30),
+        flag: namePool[2].flag,
+        action: t("subscription.just_subscribed"),
+      },
+    ];
 
-  setRecentActivity(activities);
-}, [i18n.language]); // IMPORTANT : t retiré pour éviter la boucle infinie
-
+    setRecentActivity(activities);
+  }, [i18n.language, t]);
 
   const fetchBitcoinPrice = async () => {
     try {
@@ -130,6 +129,11 @@ useEffect(() => {
   return (
     <section className="my-10 sm:my-20 px-4">
       <div className="max-w-6xl mx-auto">
+
+        {/* Section Donation avec ref */}
+        <div ref={donationRef}>
+          <DonationSection />
+        </div>
         
         {/* Bandeau de preuve sociale */}
         <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border-2 border-green-400 rounded-xl p-4 mb-6 animate-pulse">
@@ -205,7 +209,7 @@ useEffect(() => {
                     key={index}
                     className="flex items-start gap-3 pb-3 border-b border-yellow-400/20"
                   >
-                    <span className="text-green-400 text-xl">✔</span>
+                    <span className="text-green-400 text-xl">✓</span>
                     <span className="text-gray-300 text-sm">{feature}</span>
                   </li>
                 ))}
@@ -278,7 +282,7 @@ useEffect(() => {
                   </p>
 
                   <p className="text-center text-xs text-green-400 mt-2 flex items-center justify-center gap-1">
-                    <span className="animate-pulse">●</span> {t("subscription.updated")}
+                    <span className="animate-pulse">◉</span> {t("subscription.updated")}
                   </p>
                 </>
               )}
@@ -377,4 +381,6 @@ useEffect(() => {
       </div>
     </section>
   );
-}
+};
+
+export default SubscriptionCard;
