@@ -18,7 +18,7 @@ export default function Footer({ openModal }) {
   ];
 
   return (
-    <footer className="bg-[#0a0e27]/90 border-t-2 border-yellow-400/30 mt-20 py-10">
+    <footer className="bg-[#0a0e27]/90 border-t-2 border-yellow-400/30 mt-8 py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Paiement crypto */}

@@ -94,8 +94,8 @@ export default function MinerDashboard() {
   return (
     <>
       {/* BOUTON PRINCIPAL EN HAUT - Bien visible */}
-      <section className="my-12">
-        <div className="max-w-4xl mx-auto">
+      <section className="my-0">
+      <div className="max-w-4xl mx-auto">
           <button
             onClick={() => setIsOpen(true)}
             className="w-full bg-gradient-to-r from-cyan-500 via-blue-600 to-cyan-500 text-white px-8 py-6 rounded-2xl shadow-[0_0_40px_rgba(6,182,212,0.5)] hover:shadow-[0_0_60px_rgba(6,182,212,0.8)] hover:scale-[1.02] transition-all duration-300 relative overflow-hidden group"

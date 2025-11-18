@@ -59,7 +59,7 @@ export default function LotteryBanner() {
   }).format(blockValue);
 
   return (
-    <div className="bg-gradient-to-r from-red-400 via-yellow-400 to-green-400 rounded-2xl p-8 my-12 text-center shadow-2xl animate-[pulse_2s_infinite]">
+    <div className="bg-gradient-to-r from-red-400 via-yellow-400 to-green-400 rounded-2xl p-8 my-4 text-center shadow-2xl animate-[pulse_2s_infinite]">
       <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
         🎯 {t("lottery.title")}
       </h3>
