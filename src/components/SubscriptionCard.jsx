@@ -164,23 +164,23 @@ const SubscriptionCard = ({ donationRef }) => {
 
               {/* Prix */}
               <div className="text-center mb-6">
-                <div className="text-6xl font-bold text-cyan-400">
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-cyan-400">
                   9,99€
-                  <span className="text-xl text-gray-400 ml-2">{t("subscription.price")}</span>
+                  <span className="text-base sm:text-lg md:text-xl text-gray-400 ml-2">{t("subscription.price")}</span>
                 </div>
-                <p className="text-yellow-400 mt-2 font-semibold">
-                  ⚡ {t("subscription.activation")}
-                </p>
+                  <p className="text-yellow-400 mt-2 font-semibold text-sm sm:text-base">
+                    ⚡ {t("subscription.activation")}
+                  </p>
               </div>
 
               {/* Stats en temps réel */}
-              <div className="grid grid-cols-2 gap-4 mb-6">
-                <div className="bg-cyan-400/10 border border-cyan-400 rounded-lg p-4 text-center">
-                  <div className="text-3xl font-bold text-cyan-400">{activeSubscribers}</div>
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-6">
+                <div className="bg-cyan-400/10 border border-cyan-400 rounded-lg p-3 sm:p-4 text-center">
+                  <div className="text-2xl sm:text-3xl font-bold text-cyan-400">{activeSubscribers}</div>
                   <div className="text-xs text-gray-400 mt-1">{t("subscription.active_miners_short")}</div>
                 </div>
-                <div className="bg-orange-400/10 border border-orange-400 rounded-lg p-4 text-center">
-                  <div className="text-3xl font-bold text-orange-400">144</div>
+                <div className="bg-orange-400/10 border border-orange-400 rounded-lg p-3 sm:p-4 text-center">
+                  <div className="text-2xl sm:text-3xl font-bold text-orange-400">144</div>
                   <div className="text-xs text-gray-400 mt-1">{t("subscription.draws_per_day")}</div>
                 </div>
               </div>
@@ -290,11 +290,11 @@ const SubscriptionCard = ({ donationRef }) => {
 
             {/* QR Code */}
             <div className="flex justify-center mb-6">
-              <div className="bg-white p-5 rounded-2xl shadow-2xl">
+              <div className="bg-white p-4 sm:p-5 rounded-2xl shadow-2xl">
                 <img
                   src={`https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=bitcoin:${BITCOIN_ADDRESS}?amount=${btcAmount}`}
                   alt="QR Code Bitcoin"
-                  className="w-60 h-60"
+                  className="w-48 h-48 sm:w-60 sm:h-60"
                 />
               </div>
             </div>

@@ -176,19 +176,20 @@ function App() {
       <Header openModal={openModal} />
       
       {/* Sélecteur de langue - Positionné en haut à droite */}
-      <div className="absolute top-4 right-4 z-50">
+      <div className="fixed top-2 right-2 sm:top-4 sm:right-4 z-50">
         <LanguageSelector />
       </div>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-16">
-        {/* Hero Section avec 3 boutons */}
-        <div className="mb-12">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-white">
-            {t('home.welcome')}
-          </h1>
-          
-          {/* 3 Boutons de navigation */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-4xl mx-auto">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-16 pb-8">
+        
+       {/* Hero Section avec 3 boutons */}
+      <div className="mb-12 px-2 sm:px-4">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 text-white px-4">
+          {t('home.welcome')}
+        </h1>
+  
+  {/* 3 Boutons de navigation */}
+  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center max-w-4xl mx-auto px-4">
             
             {/* Bouton 1 : S'abonner Maintenant */}
             <button 
